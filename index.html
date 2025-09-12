@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KODA</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/index.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/css/header_footer.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/imagens/FooterHeader/koda-logo.png">
+
 </head>
+
 <body>
+    <!--inicio da Header-------------------------------------------------------------------------------------------------->
+    <header class="navbar">
+        <div class="container">
+            <!-- Ícone de menu-->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- codigo do icone de menu-->
+            </div>
+            <img src="./imagens/FooterHeader/koda-logo.png" alt="Logo" class="logo">
+            <nav class="menu" id="menu">
+                <a href="/index.html">Home</a>
+                <a href="./paginas/appKoda.html">App</a>
+                <a href="./paginas/guiadosPais.html">Guia dos Pais</a>
+                <a href="./paginas/contato.html">Contato</a>
+                <a href="./paginas/sobrenos.html">Sobre nós</a>
+                <a href="./paginas/adote.html">Adote</a>
+            </nav>
+        </div>
+    </header>
+    <!--Final da Header--------------------------------------------------------------------------------------------------->
+
+    <!-- CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
@@ -19,13 +45,81 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
- <h1>aaaaaaaaaaaaaaaaaaaa</h1>
+
+    <h1>aaaaaaaaaaaaaaaaaaaa</h1>
+
+    <!-- FINAL DO CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
+
     <!--inicio do footer-->
     <footer>
-        
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#home"><img src="./imagens/FooterHeader/footer-logo.png" alt="Koda logo"></a>
+                <p>No KODA, acreditamos que aprender tecnologia pode ser divertido e leve.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a
+                            href="https://www.alura.com.br/artigos/html-css-e-js-definicoes?srsltid=AfmBOopwXEjOBcZMtTN9I5N0tvhTWbax2gQWXewdu9hxTt33E9PH61Ca">Tecnologias
+                            para Aprender</a></li>
+                    <li><a href="#">Sobre o Koda</a></li>
+                    <li><a href="#">Sobre o App</a></li>
+                    <li><a href="imagens/FooterHeader/Metodologias.pdf">Metodologias</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3>Contatos</h3>
+                <a
+                    href="https://www.google.com/maps/place/Senac+Lapa+Tito/data=!4m2!3m1!1s0x0:0x923835e9005f8309?sa=X&ved=1t:2428&ictx=111">Rua
+                    Tito, 34 São aulo / SP<a>
+                        <a href="mailto:kodaorg@edu.com.br">kodaorg@edu.com.br</a>
+                        <p>(11) 93214-9432</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#guia_pais">Guia segurança com Koda</a></li>
+                    <li><a href="#">Canais de suporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul id="footer_redes-sociais">
+                    <li><img src="imagens/FooterHeader/instagram.png"></li>
+                    <li><img src="imagens/FooterHeader/linkedin.png"></li>
+                    <li><img src="imagens/FooterHeader/facebook.png"></li>
+                    <li><img src="imagens/FooterHeader/youtube.png"></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-duvidas">Tem dúvidas? Estamos aqui para você! Entre em contato pelo nosso
+            <strong>email</strong> ou
+            <strong>telefone</strong> e nossa equipe terá prazer em ajudar
+        </p>
+
+        <div class="footer-bottom">
+            <span>© 2025 KODA. Todos os direitos reservados.</span>
+            <a style="color: white; text-decoration: none;"
+                href="imagens/FooterHeader/Declaração de Privacidade e Proteção dos Dados Koda.pdf" download>Termos &
+                Privacidade</a>
+        </div>
+
     </footer>
-    
+    <!--Final da footer-------------------------------------------------------------------------------------------------->
+
+    <!--início do JAVASCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./javascript/index.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/menu-navbar.js"></script>
+    <!--final do JAVASCRIPT----------------------------------------------------------------------------------------------->
 </body>
+
 </html>
