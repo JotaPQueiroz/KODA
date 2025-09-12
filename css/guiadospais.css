@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap);
+
+:root {
+    --cor-fundo-footer: #FF8965;
+    --cor-fundo-header: #FF6C3F;
+    --cor-fundo-guia-pais: #FFF4DE;
+    --cor-titulo: #F35F2F;
+    --rosa-avermelhado: #F85655;
+    --cor-texto: #272727;
+    --bege-claro: #FFD6C0;
+    --laranja-claro: #FF6C3F;
+    --verde-agua: #5DA1B7;
+    --azul-bebe: #7BCAF9;
+}
+body{
+    background-color: var(--cor-fundo-guia-pais);
+}
+.conteudo {
+    background-color: var(--cor-fundo-guia-pais);
+    margin: auto;
+    width: 100%;
+}
+/*SECAO PRINCIPAL*/
+#guia_pais__principal{
+    height: auto;
+    width: 100%;
+    display: flex;
+    
+}
+
+.guia_pais__principal--container{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+}
+#principal_imagem-fundo{
+    background-image: url(/assets/imgs/koda_fundo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 70%;
+    height: 904px;
+}
+#principal_conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 2%;
+    justify-content: center;
+    height: 800px;
+}
+#principal_conteudo--titulo-subtitulo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+.guia_pais--titulo{
+    font-family: "Fredoka", sans-serif;
+    font-size: 58px;
+    color: var(--cor-titulo);
+    font-weight: 700;
+}
+.guia_pais--subtitulo{
+    font-family: "Fredoka", sans-serif;
+    font-size: 32px;
+    color: var(--rosa-avermelhado);
+    font-weight: 800;
+}
+/*Primeiro depoimento */
+.principal_conteudo__card-g{
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 5%;
+    background-color: var(--bege-claro);
+    border-radius: 30px;
+}
+
+.card_comentarios-imagem-g{
+    background-image: url(/assets/imgs/comentario_1.png);
+    width: 15%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card_comentarios{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-style: italic;
+}
+.card_comentarios h5{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 800;
+    color: var(--cor-texto);
+}
+.card_comentarios p{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#card_comentarios-g h5{
+    font-size: 20px;
+}
+#card_comentarios-g p{
+    font-size: 18px;
+}
+/* Dois depoimentos menores */
+
+.principal_conteudo__dois-cards{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+}
+.principal_conteudo__card-m{
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 2%;
+    background-color: var(--bege-claro);
+    border-radius: 20px;
+}
+#card_comentarios-imagem-m1{
+    background-image: url(/assets/imgs/comentario_2.png);
+    width: 15%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#card_comentarios-imagem-m2{
+    background-image: url(/assets/imgs/comentario_3.png);
+    width: 15%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*FIM SECAO PRINCIPAL*/
