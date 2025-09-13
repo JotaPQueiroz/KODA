@@ -6,17 +6,23 @@
 }
 
 body {
-  font-family: "Fredoka", sans-serif;
-  background-color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding-top: 80px;  
+
 }
 
 .navbar {
   background-color: #FF6C3F;
-  position: relative;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 10px 0;
 }
 
-.container {
+.container-navbar {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -267,25 +273,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-  /* Ícones simples com SVG inline */
-  .footer-social svg {
-    width: 22px;
-    height: 22px;
-    fill: white;
-    vertical-align: middle;
-  }
-
-  .footer-duvidas{
-    text-align: center;
-  }
-
-footer a:hover {
-    cursor: pointer;
-    font-weight: 710;
-    transition: all 0.4;
-}
-
 
   /* Responsivo */
   @media (max-width: 768px) {
