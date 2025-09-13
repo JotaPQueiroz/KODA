@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia dos Pais</title>
-    <link rel="stylesheet" href="/css/guiadospais.css" type="text/css"/>
+    <!-- Font Awesome CSS import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Link SwapperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/guiadospais.css" type="text/css" />
     <link rel="stylesheet" href="/css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="/css/header_footer.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/header_footer.css" type="text/css" />
     <link rel="icon" type="image/x-icon" href="/imagens/FooterHeader/koda-logo.png">
+
+
 </head>
+
 <body>
     <!--inicio da Header-------------------------------------------------------------------------------------------------->
     <header class="navbar">
@@ -31,12 +40,15 @@
     <!--Final da Header--------------------------------------------------------------------------------------------------->
 
     <!-- GUIA DOS PAIS ----------------------------------------------------------------------------------------------->
-
-
-     <main id="guia_pais">
+    <main id="guia_pais">
         <!--Inicio Seção Principal-->
         <section class="conteudo" id="guia_pais__principal">
+
+
+
             <div class="guia_pais__principal--container">
+
+
 
                 <div id="principal_imagem-fundo"></div>
                 <div id="principal_conteudo">
@@ -58,8 +70,10 @@
 
                     <div class="principal_conteudo__dois-cards">
                         <div class="principal_conteudo__card-m">
-                            <div id="card_comentarios-imagem-m1"></div>
-                            <div class="card_comentarios">
+
+                            <div id="card_comentarios-imagem-m1" class="card-imagem-m"></div>
+
+                            <div class="card_comentarios" id="card_comentarios-m">
 
                                 <h5>A pelúcia faz toda a diferença.</h5>
                                 <p>“A forma como o jogo se conecta à pelúcia torna a programação algo concreto e
@@ -68,10 +82,10 @@
                             </div>
                         </div>
                         <div class="principal_conteudo__card-m">
-                            <div id="card_comentarios-imagem-m2"></div>
-                            <div class="card_comentarios">
+                            <div id="card_comentarios-imagem-m2" class="card-imagem-m"></div>
+                            <div class="card_comentarios" id="card_comentarios-m">
 
-                                <h5>"Finalmente um aplicativo que eu confio."</h5>
+                                <h5>Finalmente um aplicativo que eu confio.</h5>
                                 <p> “A segurança foi o que me conquistou. O aplicativo me dá controle total e a IA da
                                     pelúcia é focada apenas no aprendizado.” </p>
                                 <p> — Carlos M., pai de Sofia (9 anos)</p>
@@ -104,8 +118,14 @@
         <!--Final Segurança Digital-->
 
         <!-- Inicio Transparencia Plataforma -->
-        <section class="conteudo" id="guia_pais__transparencia">
-            <div class="guia_pais__transparencia--container">
+        <section class="conteudo swiper" id="guia_pais__transparencia">
+
+            <div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="guia_pais__transparencia--container ">
 
                 <h1 class="guia_pais--titulo">Transparência e Confiança na Plataforma</h1>
 
@@ -115,24 +135,59 @@
                         funciona e como lidamos com os dados.</p>
                 </div>
 
-                <div id="card_container">
-                    <div class="transparencia_card-container" id="transparencia_card-1">
+                <div id="card_container" class="swiper-wrapper">
+
+                    <!-- CARD 1-->
+                    <div class="transparencia_card-container swiper-slide" id="transparencia_card-1">
 
                         <div class="transparencia_card--conteudo">
                             <h4>Privacidade em Primeiro Lugar</h4>
                             <p>Sua privacidade é nossa prioridade. Coletamos somente dados necessários e os protegemos
                                 com criptografia, sem armazenar informações pessoais sensíveis como nome ou endereço.
                             </p>
+                            <button class="btn_saiba-mais" id="btn_seguranca">Saiba mais</button>
+                        </div>
+                        <div class="transparencia_card--imagem " id="card_imagem-1"></div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="transparencia_card-container swiper-slide" id="transparencia_card-2">
+
+                        <div class="transparencia_card--conteudo">
+                            <h4>Como A Criança Aprende</h4>
+
+                            <p>Seu filho aprende a programar com diversão. Usamos jogos e histórias (Game-Based Learning
+                                e Storytelling) para que ele crie projetos próprios (Construcionismo) em pequenas e
+                                fáceis etapas (Microlearning).</p>
                             <button class="btn_saiba-mais" id="btn_metodologias">Saiba mais</button>
                         </div>
-                        <div class="transparencia_card--imagem"></div>
+                        <div class="transparencia_card--imagem" id="card_imagem-2"></div>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="transparencia_card-container swiper-slide" id="transparencia_card-3">
+
+                        <div class="transparencia_card--conteudo">
+                            <h4>Acesso e Visibilidade da Jornada</h4>
+
+                            <p>O perfil de usuário no aplicativo é sua janela para o progresso do seu filho. Nele,
+                                você pode acompanhar os jogos concluídos, os desafios superados e as novas habilidades
+                                que ele está desenvolvendo, garantindo que você esteja sempre por dentro do seu
+                                aprendizado.</p>
+                            <button class="btn_saiba-mais" id="btn_jornada">Baixe Agora</button>
+                        </div>
+                        <div class="transparencia_card--imagem" id="card_imagem-3"></div>
+
                     </div>
                 </div>
             </div>
-        </section>
-    <!--Final Transparencia com a Plataforma-->
+            <div class="swiper-pagination"></div>
 
-     </main>
+        </section>
+        <!--Final Transparencia com a Plataforma-->
+
+    </main>
 
     <!-- FINAL DO CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
 
@@ -201,8 +256,13 @@
 
     </footer>
     <!--Final da footer-------------------------------------------------------------------------------------------------->
-<!-- CONTEUDO JAVASCRIPT -->
+    <!-- CONTEUDO JAVASCRIPT -->
+    <!--Link SwapperJS SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <script src="/javascript/guiadosPais.js"></script>
     <script src="/javascript/menu-navbar.js"></script>
+
 </body>
+
 </html>

@@ -12,6 +12,8 @@
     --laranja-claro: #FF6C3F;
     --verde-agua: #5DA1B7;
     --azul-bebe: #7BCAF9;
+    --amarelo-claro: #F4AC47;
+    --laranja-amarronzado:#FF9140;
 }
 body{
     background-color: var(--cor-fundo-guia-pais);
@@ -23,31 +25,32 @@ body{
 }
 /*SECAO PRINCIPAL*/
 #guia_pais__principal{
-    height: auto;
+    height: 100vh;
     width: 100%;
     display: flex;
-    
+    align-items:center;
+    justify-content: center;
 }
-
 .guia_pais__principal--container{
-    margin-top: 120px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    
 }
 #principal_imagem-fundo{
-    background-image: url(/assets/imgs/koda_fundo.png);
+    background-image: url(/imagens/guiadospais/koda_fundo.png);
     background-repeat: no-repeat;
     background-size:contain;
-    width: 70%;
-    height: 904px;
+    width: 40%;
+    height: 85vh;
 }
 #principal_conteudo{
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 2vh;
     padding: 2%;
     justify-content: center;
-    height: 800px;
+    height: auto;
 }
 #principal_conteudo--titulo-subtitulo{
     display: flex;
@@ -70,9 +73,9 @@ body{
     color: var(--rosa-avermelhado);
     font-weight: 800;
 }
-/*Primeiro depoimento */
+/* Depoimento Grande */
 .principal_conteudo__card-g{
-    height: 112px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +86,7 @@ body{
 }
 
 .card_comentarios-imagem-g{
-    background-image: url(/assets/imgs/comentario_1.png);
+    background-image: url(/imagens/guiadospais/comentario_1.png);
     width: 15%;
     height: 100px;
     background-repeat: no-repeat;
@@ -98,10 +101,11 @@ body{
 }
 .card_comentarios h5{
     font-family: "Fredoka", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--cor-texto);
 }
 .card_comentarios p{
+    
     font-family: 'Montserrat', sans-serif;
     
 }
@@ -111,7 +115,7 @@ body{
 #card_comentarios-g p{
     font-size: 18px;
 }
-/* Dois depoimentos menores */
+/* Depoimentos Médios */
 
 .principal_conteudo__dois-cards{
     height: auto;
@@ -121,54 +125,62 @@ body{
     gap: 1%;
 }
 .principal_conteudo__card-m{
-    height: 85px;
+    height: auto;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 12px 2%;
+    object-fit: contain;
     background-color: var(--bege-claro);
     border-radius: 20px;
 }
-#card_comentarios-imagem-m1{
-    background-image: url(/assets/imgs/comentario_2.png);
-    width: 15%;
+
+#card_comentarios-m p{
+    font-size: 10px;
+}
+.card-imagem-m{
+    width: 40%;
     height: 100px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+#card_comentarios-imagem-m1{
+    background-image: url(/imagens/guiadospais/comentario_2.png);
 }
 #card_comentarios-imagem-m2{
-    background-image: url(/assets/imgs/comentario_3.png);
-    width: 15%;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(/imagens/guiadospais/comentario_3.png);
 }
 /*FIM SECAO PRINCIPAL*/
+
 
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca{
     height: 100vh;
     width: 100%;
     display: flex;
+    justify-content: center;
+    
 }
 .guia_pais__seguranca--container{
     display: flex;
     flex-direction: row;
-    height: 700px;
+    height: 600px;
     width: 80%;
     margin: auto;
-    margin-top: 180px;
+    
 }
 #seguranca_conteudo-texto{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     width: 50%;
 }
 
 #seguranca_conteudo-imagem{
-    background-image: url(/assets/imgs/menina_negra_com_tablet.png);
+    background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
     height: 650px;
     width: 50%;
     background-repeat: no-repeat;
@@ -176,14 +188,14 @@ body{
 }
 
 #seguranca_conteudo-texto h1{
-    font-size: 64px;
+    font-size: 4vw;
     font-weight: 1000;
     font-style: normal;
 }
 .guia_pais--texto {
     color: #272727;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
     
 }
@@ -199,11 +211,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    gap: 25px;
-    height: 700px;
+    gap: 5vh;
+    height: auto;
     margin: auto;
-    margin-top: 180px;
+    width: 90%;
     
 }
 .transparencia_subtitulo-texto{
@@ -214,49 +227,83 @@ body{
     width: 100%;
 }
 #card_container{
+    user-select: none;
     display: flex;
     flex-direction: row;
     gap: 2%;
 }
 .transparencia_card-container{
-    background-image: url(/assets/imgs/card_container.png);
-    height: 360px;
+    
+    width: 100%;
+    padding: 15px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 5%;
-    padding: 5%;
-    background-repeat: no-repeat;
-    
-    
+    align-items: center; 
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px 0 40px 0;
+    transition: 0.6s ease;
 }
-
 #transparencia_card-1{
     background-color: var(--verde-agua);
-    border-radius: 0 50px 0 50px;
 }
+#transparencia_card-1:hover{
+    background-color: var(--azul-bebe);
+}
+#transparencia_card-2{
+    background-color: var(--rosa-avermelhado);
+}
+#transparencia_card-2:hover{
+    background-color: #ff7aa2
+}
+#transparencia_card-3{
+    background-color: var(--laranja-amarronzado);
+}
+#transparencia_card-3:hover{
+    background-color: var(--amarelo-claro);
+}
+
 .transparencia_card--conteudo{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 15px;
-    width: 50%;
-    
+    gap: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
 }
 .transparencia_card--conteudo h4{
     font-family: "Fredoka", sans-serif;
     font-weight: 1000;
-    font-size: 34px;
+    font-size: 1.6vw;
     color: #fff;
-    
 }
 .transparencia_card--conteudo p{
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     text-align: left;
-    font-size: 26px;
+    font-size: 1.5vw;
     color: #fff;
-    
+   
+}
+
+.swiper-button-prev{
+    top:630px; 
+    left: 2vh
+}
+.swiper-button-next{
+    top:630px; 
+    right: 2vh;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+        font-family: 'Font Awesome 6 Free';
+        color:#ff692e; 
+        font-weight: 900; 
+        content: '\f138';
+}
+.swiper-button-prev::after {
+    content: '\f137'; 
 }
 .btn_saiba-mais{
     display: flex;
@@ -265,23 +312,51 @@ body{
     height: 33px;
     padding: 21px;
     border-radius: 50px;
-    width: 30%;
+    border: none;
+    width: 40%;
 }
+
 .btn_saiba-mais:hover{
+    transition: 0.4s ease-in;
     cursor: pointer;
-    box-shadow: 0 4.184px 4.184px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
+}
+#btn_seguranca{
+    color: var(--verde-agua);
+    font-size: 1.5vw;
+    font-weight: 550;
 }
 #btn_metodologias{
-    color: var(--verde-agua);
-    font-size: 20px;
+    color: var(--rosa-avermelhado);
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+#btn_jornada{
+    color: var(--laranja-amarronzado);
+    font-size: 1.5vw;
     font-weight: 550;
 }
 .transparencia_card--imagem{
-    background-image: url(/assets/imgs/familia_card_1.png);
-    width: 70%;
-    height: 500px;
+    width: 45%;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position:center;
+}
+#card_imagem-1{
+    background-image: url(/imagens/guiadospais/familia_card_1.png);
+}
+#card_imagem-2{
+    background-image: url(/imagens/guiadospais/familia_card_2.png);
+}
+#card_imagem-3{
+    background-image: url(/imagens/guiadospais/familia_card_3.png);
 }
 /*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
+
+/*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
+@media (max-width: 1060px){
+    #principal_imagem-fundo{
+        display: none;
+    }
+}
