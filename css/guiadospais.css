@@ -14,6 +14,7 @@
     --azul-bebe: #7BCAF9;
     --amarelo-claro: #F4AC47;
     --laranja-amarronzado:#FF9140;
+    --verde-agua-escuro: #225573;
 }
 body{
     background-color: var(--cor-fundo-guia-pais);
@@ -40,7 +41,7 @@ body{
 #principal_imagem-fundo{
     background-image: url(/imagens/guiadospais/koda_fundo.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     width: 40%;
     height: 85vh;
 }
@@ -63,15 +64,21 @@ body{
 }
 .guia_pais--titulo{
     font-family: "Fredoka", sans-serif;
-    font-size: 58px;
+    font-size: 3.0vw;
     color: var(--cor-titulo);
-    font-weight: 700;
 }
 .guia_pais--subtitulo{
     font-family: "Fredoka", sans-serif;
-    font-size: 32px;
+    font-size: 2vw;
     color: var(--rosa-avermelhado);
-    font-weight: 800;
+    
+}
+.guia_pais--texto {
+    color:var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0vw;
+    font-weight: 500;
+    
 }
 /* Depoimento Grande */
 .principal_conteudo__card-g{
@@ -186,19 +193,6 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-#seguranca_conteudo-texto h1{
-    font-size: 4vw;
-    font-weight: 1000;
-    font-style: normal;
-}
-.guia_pais--texto {
-    color: #272727;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
-    font-weight: 600;
-    
-}
 /*FIM SECAO SEGURANÇA DIGITAL*/
 
 /*INICIO SECAO TRANSPARENCIA PLATAFORMA*/
@@ -206,6 +200,8 @@ body{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 .guia_pais__transparencia--container{
     display: flex;
@@ -213,7 +209,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 5vh;
+    gap: 20px;
     height: auto;
     margin: auto;
     width: 90%;
@@ -223,7 +219,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
+    gap: 20px;
     width: 100%;
 }
 #card_container{
@@ -233,14 +229,14 @@ body{
     gap: 2%;
 }
 .transparencia_card-container{
-    
     width: 100%;
-    padding: 15px;
+    padding: 20px;
+    gap: 5%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center; 
     justify-content: center;
-    margin: auto;
     border-radius: 40px 0 40px 0;
     transition: 0.6s ease;
 }
@@ -287,24 +283,6 @@ body{
    
 }
 
-.swiper-button-prev{
-    top:630px; 
-    left: 2vh
-}
-.swiper-button-next{
-    top:630px; 
-    right: 2vh;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-        font-family: 'Font Awesome 6 Free';
-        color:#ff692e; 
-        font-weight: 900; 
-        content: '\f138';
-}
-.swiper-button-prev::after {
-    content: '\f137'; 
-}
 .btn_saiba-mais{
     display: flex;
     justify-content: center;
@@ -336,15 +314,18 @@ body{
     font-size: 1.5vw;
     font-weight: 550;
 }
+
 .transparencia_card--imagem{
-    width: 45%;
+    width: 35%;
     height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
+    
 }
 #card_imagem-1{
     background-image: url(/imagens/guiadospais/familia_card_1.png);
+    
 }
 #card_imagem-2{
     background-image: url(/imagens/guiadospais/familia_card_2.png);
@@ -352,7 +333,67 @@ body{
 #card_imagem-3{
     background-image: url(/imagens/guiadospais/familia_card_3.png);
 }
+
+.onda_para_cima{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    clear: both;
+}
 /*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
+
+/*INICIO SECAO CERTIFICACAO*/
+#guia_pais__certificacao{
+    height: 30vh;
+    width: 100%;
+    background-color: var(--azul-bebe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#guia_pais__certificacao--container{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    margin: auto;
+}
+#certificacao_koda{
+    background-image: url(/imagens/guiadospais/koda_certificacao.png);
+    width: 40%;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.certificacao_conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3vh;
+}
+.certificacao_conteudo h3{
+    color: var(--verde-agua-escuro);
+}
+
+.btn_politica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+    gap: 3px;
+    border: none;
+    width: 35%;
+    font-size: 1.0vw;
+    font-weight: 700;
+    color: var(--verde-agua-escuro);
+    cursor: pointer;
+}
+.btn_politica:hover{
+    transition: 0.6s all;
+    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);;
+}
 
 /*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
 @media (max-width: 1060px){
