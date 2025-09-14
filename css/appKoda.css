@@ -13,7 +13,7 @@
 .onda-navbar{
       position: relative;
       width: 100%;
-      height: 20px;
+      height: 30px;
   }
 
   header {
@@ -125,6 +125,12 @@
       align-items: center;
       margin-top: 20px; 
     }
+
+    .onda-navbar{
+      position: relative;
+      width: 100%;
+      height: 18px;
+  }
 
     .phone-container {
       width: 250px;
