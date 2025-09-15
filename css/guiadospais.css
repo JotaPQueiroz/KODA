@@ -7,6 +7,7 @@
     --cor-fundo-guia-pais: #FFF4DE;
     --cor-titulo: #F35F2F;
     --rosa-avermelhado: #F85655;
+    --rosa-avermelhado-claro:#FE7776;
     --cor-texto: #272727;
     --bege-claro: #FFD6C0;
     --laranja-claro: #FF6C3F;
@@ -165,19 +166,17 @@ body{
 
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca{
+    display: flex;
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    
 }
 .guia_pais__seguranca--container{
     display: flex;
     flex-direction: row;
-    height: 600px;
+    justify-content: center;
+    height: auto;
     width: 80%;
     margin: auto;
-    
 }
 #seguranca_conteudo-texto{
     display: flex;
@@ -189,9 +188,10 @@ body{
 #seguranca_conteudo-imagem{
     background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
     height: 650px;
-    width: 50%;
+    width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
 /*FIM SECAO SEGURANÇA DIGITAL*/
 
@@ -219,7 +219,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
 }
 #card_container{
@@ -333,12 +333,12 @@ body{
 #card_imagem-3{
     background-image: url(/imagens/guiadospais/familia_card_3.png);
 }
-
-.onda_para_cima{
+.onda{
     display: flex;
     height: 10vh;
     width: 100%;
     clear: both;
+   
 }
 /*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
 
@@ -394,6 +394,89 @@ body{
     transition: 0.6s all;
     box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);;
 }
+
+/* INICIO SEÇÃO SEGURANÇA COM KODA */
+#guia_pais_com-koda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+.guia_pais__com-koda--container{
+   text-align: center;
+   height: auto;
+   margin:auto;
+   width: 75%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:30px;
+   
+}
+.com-koda--secao-direita{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: var(--rosa-avermelhado-claro);
+    border-radius: 50px 400px 50px 50px;
+}
+.icon-koda-joinha{
+    background-image: url(/imagens/guiadospais/koda_joinha.png);
+    width: 25%;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.secao_conteudo{
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 30px;
+    padding: 40px;
+    width: 65%;
+}
+.secao_conteudo h5{
+    font-size: 2vw;
+}
+.secao_conteudo p{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+.com-koda--secao-esquerda{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: var(--azul-bebe);
+    border-radius: 400px 50px 50px 50px;
+}
+.icon-bambu{
+    background-image: url(/imagens/guiadospais/bambu.png);
+    width: 10%;
+    height: 135px;
+    background-repeat: no-repeat;
+}
+.icon-koda_secao{
+    width: 25%;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#koda-joinha{
+    background-image: url(/imagens/guiadospais/koda_joinha.png);
+}
+#koda-no-pc{
+    background-image: url(/imagens/guiadospais/koda_pc.png);
+}
+
 
 /*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
 @media (max-width: 1060px){
