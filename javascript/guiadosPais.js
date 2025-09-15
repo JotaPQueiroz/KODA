@@ -1,4 +1,4 @@
-new Swiper('.guia_pais__transparencia--container', {
+new Swiper('.transparencia-container', {
   grabCursor: true,
 
   // If we need pagination

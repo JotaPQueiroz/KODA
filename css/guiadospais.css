@@ -6,6 +6,7 @@
     --cor-fundo-header: #FF6C3F;
     --cor-fundo-guia-pais: #FFF4DE;
     --cor-titulo: #F35F2F;
+    --laranja-btn: #ED4700;
     --rosa-avermelhado: #F85655;
     --rosa-avermelhado-claro:#FE7776;
     --cor-texto: #272727;
@@ -33,7 +34,7 @@ body{
     align-items:center;
     justify-content: center;
 }
-.guia_pais__principal--container{
+.principal-container{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -65,19 +66,19 @@ body{
 }
 .guia_pais--titulo{
     font-family: "Fredoka", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--cor-titulo);
 }
 .guia_pais--subtitulo{
     font-family: "Fredoka", sans-serif;
-    font-size: 2vw;
+    font-size: 30px;
     color: var(--rosa-avermelhado);
     
 }
 .guia_pais--texto {
     color:var(--cor-texto);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.0vw;
+    font-size: 16px;
     font-weight: 500;
     
 }
@@ -89,8 +90,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 22px 5%;
-    background-color: var(--bege-claro);
+    background-color: #fff;
     border-radius: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .card_comentarios-imagem-g{
@@ -123,8 +125,8 @@ body{
 #card_comentarios-g p{
     font-size: 18px;
 }
-/* Depoimentos Médios */
 
+/* Depoimentos Médios */
 .principal_conteudo__dois-cards{
     height: auto;
     display: flex;
@@ -140,9 +142,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 12px 2%;
-    object-fit: contain;
-    background-color: var(--bege-claro);
+    background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #card_comentarios-m p{
@@ -170,12 +172,12 @@ body{
     height: 100vh;
     width: 100%;
 }
-.guia_pais__seguranca--container{
+.seguranca-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 #seguranca_conteudo-texto{
@@ -193,6 +195,13 @@ body{
     background-size: contain;
     
 }
+#confira-ja{
+    background-color: var(--cor-titulo);
+    color: #fff;
+}
+#confira-ja:hover{
+    background-color: var(--laranja-btn);
+}
 /*FIM SECAO SEGURANÇA DIGITAL*/
 
 /*INICIO SECAO TRANSPARENCIA PLATAFORMA*/
@@ -203,13 +212,14 @@ body{
     flex-direction: column;
     padding: 0;
 }
-.guia_pais__transparencia--container{
+.transparencia-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 20px;
+    object-fit: contain;
     height: auto;
     margin: auto;
     width: 90%;
@@ -250,7 +260,7 @@ body{
     background-color: var(--rosa-avermelhado);
 }
 #transparencia_card-2:hover{
-    background-color: #ff7aa2
+    background-color: var(--rosa-avermelhado-claro)
 }
 #transparencia_card-3{
     background-color: var(--laranja-amarronzado);
@@ -271,14 +281,14 @@ body{
 .transparencia_card--conteudo h4{
     font-family: "Fredoka", sans-serif;
     font-weight: 1000;
-    font-size: 1.6vw;
+    
     color: #fff;
 }
 .transparencia_card--conteudo p{
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 16px;
     color: #fff;
    
 }
@@ -292,6 +302,10 @@ body{
     border-radius: 50px;
     border: none;
     width: 40%;
+
+    font-size: 16px;
+    font-weight: 550;
+
 }
 
 .btn_saiba-mais:hover{
@@ -301,18 +315,12 @@ body{
 }
 #btn_seguranca{
     color: var(--verde-agua);
-    font-size: 1.5vw;
-    font-weight: 550;
 }
 #btn_metodologias{
     color: var(--rosa-avermelhado);
-    font-size: 1.5vw;
-    font-weight: 550;
 }
 #btn_jornada{
     color: var(--laranja-amarronzado);
-    font-size: 1.5vw;
-    font-weight: 550;
 }
 
 .transparencia_card--imagem{
@@ -351,11 +359,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-#guia_pais__certificacao--container{
+#certificacao-container{
     display: flex;
     flex-direction: row;
     gap: 90px;
     margin: auto;
+    width: 90%;
 }
 #certificacao_koda{
     background-image: url(/imagens/guiadospais/koda_certificacao.png);
@@ -403,14 +412,15 @@ body{
     height: 100vh;
     
 }
-.guia_pais__com-koda--container{
+.com_koda-container{
    text-align: center;
    height: auto;
    margin:auto;
-   width: 75%;
+   width: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
+   
    gap:30px;
    
 }
@@ -420,40 +430,39 @@ body{
     display: flex;
     flex-direction: row;
     align-items: end;
+    justify-content: center;
+    gap: 25px;
     background-color: var(--rosa-avermelhado-claro);
     border-radius: 50px 400px 50px 50px;
 }
-.icon-koda-joinha{
-    background-image: url(/imagens/guiadospais/koda_joinha.png);
-    width: 25%;
-    height: 290px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+
 .secao_conteudo{
-    height: 300px;
+    height: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     gap: 15px;
     border-radius: 30px;
     padding: 40px;
-    width: 65%;
+    width: 55%;
+    word-wrap: break-word;
 }
 .secao_conteudo h5{
-    font-size: 2vw;
+    height: auto;
+    font-size: 1.5vw;
 }
 .secao_conteudo p{
+    height: auto;
     font-size: 1.2vw;
-    font-weight: 600;
 }
 .com-koda--secao-esquerda{
-    height: 300px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: end;
+    justify-content: center;
+    gap: 25px;
     background-color: var(--azul-bebe);
     border-radius: 400px 50px 50px 50px;
 }
@@ -462,21 +471,25 @@ body{
     width: 10%;
     height: 135px;
     background-repeat: no-repeat;
+    
 }
 .icon-koda_secao{
-    width: 25%;
-    height: 290px;
+    width: 30%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 #koda-joinha{
     background-image: url(/imagens/guiadospais/koda_joinha.png);
+    width: 25%;
+    height: 95%;
 }
 #koda-no-pc{
     background-image: url(/imagens/guiadospais/koda_pc.png);
+    width: 25%;
+    height: 95%;
 }
-
 
 /*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
 @media (max-width: 1060px){
