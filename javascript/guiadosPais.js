@@ -25,3 +25,12 @@ new Swiper('.guia_pais__transparencia--container', {
     }
   }
 });
+
+(function(d){
+
+  var s = d.createElement("script");
+  s.setAttribute("data-account", "SUA_CHAVE");
+  s.src="https://cdn.userway.org/widget.js";
+  (d.body || d.head).appendChild(s);
+
+})(document)

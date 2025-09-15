@@ -65,7 +65,7 @@ body{
 }
 .guia_pais--titulo{
     font-family: "Fredoka", sans-serif;
-    font-size: 3.0vw;
+    font-size: 30px;
     color: var(--cor-titulo);
 }
 .guia_pais--subtitulo{
