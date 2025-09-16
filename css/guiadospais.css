@@ -216,7 +216,6 @@ body {
     width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 #confira-blog {
@@ -495,12 +494,10 @@ body {
 .com_koda-container {
     text-align: center;
     height: auto;
-    margin: auto;
-    width: auto;
+   margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 30px;
 
 }
@@ -514,7 +511,7 @@ body {
     justify-content: center;
     gap: 25px;
     background-color: var(--rosa-avermelhado-claro);
-    border-radius: 50px 400px 50px 50px;
+    border-radius: 50px 300px 50px 50px;
 }
 
 .secao_conteudo {
@@ -524,7 +521,7 @@ body {
     flex-direction: column;
     gap: 15px;
     border-radius: 30px;
-    padding: 40px;
+    padding: 15px;
     width: 55%;
     word-wrap: break-word;
 }
