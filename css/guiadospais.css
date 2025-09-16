@@ -8,46 +8,52 @@
     --cor-titulo: #F35F2F;
     --laranja-btn: #ED4700;
     --rosa-avermelhado: #F85655;
-    --rosa-avermelhado-claro:#FE7776;
+    --rosa-avermelhado-claro: #FE7776;
     --cor-texto: #272727;
     --bege-claro: #FFD6C0;
     --laranja-claro: #FF6C3F;
     --verde-agua: #5DA1B7;
     --azul-bebe: #7BCAF9;
     --amarelo-claro: #F4AC47;
-    --laranja-amarronzado:#FF9140;
+    --laranja-amarronzado: #FF9140;
     --verde-agua-escuro: #225573;
 }
-body{
+
+body {
     background-color: var(--cor-fundo-guia-pais);
 }
+
 .conteudo {
     background-color: var(--cor-fundo-guia-pais);
     margin: auto;
     width: 100%;
 }
+
 /*SECAO PRINCIPAL*/
-#guia_pais__principal{
+#guia_pais__principal {
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
-.principal-container{
+
+.principal-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
 }
-#principal_imagem-fundo{
+
+#principal_imagem-fundo {
     background-image: url(/imagens/guiadospais/koda_fundo.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 40%;
     height: 85vh;
 }
-#principal_conteudo{
+
+#principal_conteudo {
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -55,35 +61,40 @@ body{
     justify-content: center;
     height: auto;
 }
-#principal_conteudo--titulo-subtitulo{
+
+#principal_conteudo--titulo-subtitulo {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
     text-align: center;
     justify-content: center;
-  
+
 }
-.guia_pais--titulo{
+
+.guia_pais--titulo {
     font-family: "Fredoka", sans-serif;
     font-size: 40px;
     color: var(--cor-titulo);
 }
-.guia_pais--subtitulo{
+
+.guia_pais--subtitulo {
     font-family: "Fredoka", sans-serif;
     font-size: 30px;
     color: var(--rosa-avermelhado);
-    
+
 }
+
 .guia_pais--texto {
-    color:var(--cor-texto);
+    color: var(--cor-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    
+
 }
+
 /* Depoimento Grande */
-.principal_conteudo__card-g{
+.principal_conteudo__card-g {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -95,46 +106,52 @@ body{
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card_comentarios-imagem-g{
+.card_comentarios-imagem-g {
     background-image: url(/imagens/guiadospais/comentario_1.png);
     width: 15%;
     height: 100px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.card_comentarios{
+
+.card_comentarios {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-style: italic;
 }
-.card_comentarios h5{
+
+.card_comentarios h5 {
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
     color: var(--cor-texto);
 }
-.card_comentarios p{
-    
+
+.card_comentarios p {
+
     font-family: 'Montserrat', sans-serif;
-    
+
 }
-#card_comentarios-g h5{
+
+#card_comentarios-g h5 {
     font-size: 20px;
 }
-#card_comentarios-g p{
+
+#card_comentarios-g p {
     font-size: 18px;
 }
 
 /* Depoimentos Médios */
-.principal_conteudo__dois-cards{
+.principal_conteudo__dois-cards {
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1%;
 }
-.principal_conteudo__card-m{
+
+.principal_conteudo__card-m {
     height: auto;
     width: 50%;
     display: flex;
@@ -147,129 +164,150 @@ body{
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-#card_comentarios-m p{
+#card_comentarios-m p {
     font-size: 10px;
 }
-.card-imagem-m{
+
+.card-imagem-m {
     width: 40%;
     height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#card_comentarios-imagem-m1{
+
+#card_comentarios-imagem-m1 {
     background-image: url(/imagens/guiadospais/comentario_2.png);
 }
-#card_comentarios-imagem-m2{
+
+#card_comentarios-imagem-m2 {
     background-image: url(/imagens/guiadospais/comentario_3.png);
 }
+
 /*FIM SECAO PRINCIPAL*/
 
 
 /*SECAO SEGURANÇA DIGITAL*/
-#guia_pais__seguranca{
+#guia_pais__seguranca {
     display: flex;
     height: 100vh;
     width: 100%;
 }
-.seguranca-container{
+
+.seguranca-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
-#seguranca_conteudo-texto{
+
+#seguranca_conteudo-texto {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 50%;
 }
 
-#seguranca_conteudo-imagem{
+#seguranca_conteudo-imagem {
     background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
     height: 650px;
     width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
 }
-#confira-ja{
-    background-color: var(--cor-titulo);
+
+#confira-blog {
+    background-color: var(--laranja-claro);
     color: #fff;
 }
-#confira-ja:hover{
+
+#confira-blog:hover {
     background-color: var(--laranja-btn);
 }
+
 /*FIM SECAO SEGURANÇA DIGITAL*/
 
 /*INICIO SECAO TRANSPARENCIA PLATAFORMA*/
-#guia_pais__transparencia{
+#guia_pais__transparencia {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
-.transparencia-container{
+
+.transparencia-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 30px;
     object-fit: contain;
     height: auto;
     margin: auto;
-    width: 90%;
-    
+    width: 75%;
+
 }
-.transparencia_subtitulo-texto{
+
+.transparencia_subtitulo-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
 }
-#card_container{
+
+#card_container {
     user-select: none;
     display: flex;
     flex-direction: row;
     gap: 2%;
 }
-.transparencia_card-container{
+
+.transparencia_card-container {
     width: 100%;
     padding: 20px;
     gap: 5%;
     height: auto;
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     border-radius: 40px 0 40px 0;
     transition: 0.6s ease;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
 }
-#transparencia_card-1{
+
+#transparencia_card-1 {
     background-color: var(--verde-agua);
 }
-#transparencia_card-1:hover{
+
+#transparencia_card-1:hover {
     background-color: var(--azul-bebe);
 }
-#transparencia_card-2{
+
+#transparencia_card-2 {
     background-color: var(--rosa-avermelhado);
 }
-#transparencia_card-2:hover{
+
+#transparencia_card-2:hover {
     background-color: var(--rosa-avermelhado-claro)
 }
-#transparencia_card-3{
+
+#transparencia_card-3 {
     background-color: var(--laranja-amarronzado);
 }
-#transparencia_card-3:hover{
+
+#transparencia_card-3:hover {
     background-color: var(--amarelo-claro);
 }
 
-.transparencia_card--conteudo{
+.transparencia_card--conteudo {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -278,80 +316,120 @@ body{
     max-width: 600px;
     padding: 10px;
 }
-.transparencia_card--conteudo h4{
+
+.transparencia_card--conteudo h4 {
     font-family: "Fredoka", sans-serif;
     font-weight: 1000;
-    
+
     color: #fff;
 }
-.transparencia_card--conteudo p{
+
+.transparencia_card--conteudo p {
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     text-align: left;
     font-size: 16px;
     color: #fff;
-   
 }
 
-.btn_saiba-mais{
+.btn_saiba-mais {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 33px;
     padding: 21px;
     border-radius: 50px;
-    border: none;
     width: 40%;
 
-    font-size: 16px;
-    font-weight: 550;
-
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    text-decoration: none;
 }
 
-.btn_saiba-mais:hover{
+.btn_saiba-mais:hover {
     transition: 0.4s ease-in;
     cursor: pointer;
     box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
 }
-#btn_seguranca{
+
+#btn_seguranca {
     color: var(--verde-agua);
 }
-#btn_metodologias{
+
+#btn_metodologias {
     color: var(--rosa-avermelhado);
 }
-#btn_jornada{
+
+#btn_jornada {
     color: var(--laranja-amarronzado);
 }
 
-.transparencia_card--imagem{
+.transparencia_card--imagem {
     width: 35%;
     height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:center;
-    
+    background-position: center;
+
 }
-#card_imagem-1{
+
+#card_imagem-1 {
     background-image: url(/imagens/guiadospais/familia_card_1.png);
-    
+
 }
-#card_imagem-2{
+
+#card_imagem-2 {
     background-image: url(/imagens/guiadospais/familia_card_2.png);
 }
-#card_imagem-3{
+
+#card_imagem-3 {
     background-image: url(/imagens/guiadospais/familia_card_3.png);
 }
-.onda{
+
+/*Configuracoes dos botoes dos cards*/
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2255fc;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%; 
+    box-shadow: 0px 0px 20px 0px rgba(140, 152, 175, 0.25);
+}
+.swiper-button-next::after {
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900; 
+    content: '\f054'; 
+}
+.swiper-button-prev::after {
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900; 
+    content: '\f053'; 
+}
+.swiper-button-prev{
+    top:500px; 
+    left: 5vh;
+}
+.swiper-button-next{
+    top:500px; 
+    right: 5vh;
+}
+
+
+/*Configuracao da onda*/
+.onda {
     display: flex;
     height: 10vh;
     width: 100%;
     clear: both;
-   
+
 }
+
 /*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
 
 /*INICIO SECAO CERTIFICACAO*/
-#guia_pais__certificacao{
+#guia_pais__certificacao {
     height: 30vh;
     width: 100%;
     background-color: var(--azul-bebe);
@@ -359,72 +437,76 @@ body{
     align-items: center;
     justify-content: center;
 }
-#certificacao-container{
+
+#certificacao-container {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 30px;
     margin: auto;
-    width: 90%;
+    width: 75%;
 }
-#certificacao_koda{
+
+#certificacao_koda {
     background-image: url(/imagens/guiadospais/koda_certificacao.png);
     width: 40%;
-    height: 20vh;
+    height: 180px;
     background-size: contain;
     background-repeat: no-repeat;
     
+
 }
-.certificacao_conteudo{
+
+.certificacao_conteudo {
     display: flex;
     flex-direction: column;
     justify-content: left;
     gap: 3vh;
 }
-.certificacao_conteudo h3{
+
+.certificacao_conteudo h3 {
     color: var(--verde-agua-escuro);
 }
 
-.btn_politica{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+.btn_config {
+    text-align: center;
     padding: 10px;
     border-radius: 50px;
-    gap: 3px;
-    border: none;
-    width: 35%;
-    font-size: 1.0vw;
-    font-weight: 700;
+    width: 40%;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
     color: var(--verde-agua-escuro);
-    cursor: pointer;
+    background-color: #fff;
 }
-.btn_politica:hover{
+
+.btn_config:hover {
     transition: 0.6s all;
-    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);;
+    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
 }
 
 /* INICIO SEÇÃO SEGURANÇA COM KODA */
-#guia_pais_com-koda{
+#guia_pais_com-koda {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    
+
 }
-.com_koda-container{
-   text-align: center;
-   height: auto;
-   margin:auto;
-   width: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-   gap:30px;
-   
+
+.com_koda-container {
+    text-align: center;
+    height: auto;
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+
 }
-.com-koda--secao-direita{
+
+.com-koda--secao-direita {
     height: auto;
     width: 100%;
     display: flex;
@@ -436,7 +518,7 @@ body{
     border-radius: 50px 400px 50px 50px;
 }
 
-.secao_conteudo{
+.secao_conteudo {
     height: auto;
     background-color: #fff;
     display: flex;
@@ -447,15 +529,18 @@ body{
     width: 55%;
     word-wrap: break-word;
 }
-.secao_conteudo h5{
+
+.secao_conteudo h5 {
     height: auto;
     font-size: 1.5vw;
 }
-.secao_conteudo p{
+
+.secao_conteudo p {
     height: auto;
     font-size: 1.2vw;
 }
-.com-koda--secao-esquerda{
+
+.com-koda--secao-esquerda {
     height: auto;
     width: 100%;
     display: flex;
@@ -466,34 +551,38 @@ body{
     background-color: var(--azul-bebe);
     border-radius: 400px 50px 50px 50px;
 }
-.icon-bambu{
+
+.icon-bambu {
     background-image: url(/imagens/guiadospais/bambu.png);
     width: 10%;
     height: 135px;
     background-repeat: no-repeat;
-    
+
 }
-.icon-koda_secao{
+
+.icon-koda_secao {
     width: 30%;
     height: auto;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
-#koda-joinha{
+
+#koda-joinha {
     background-image: url(/imagens/guiadospais/koda_joinha.png);
     width: 25%;
     height: 95%;
 }
-#koda-no-pc{
+
+#koda-no-pc {
     background-image: url(/imagens/guiadospais/koda_pc.png);
     width: 25%;
     height: 95%;
 }
 
 /*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
-@media (max-width: 1060px){
-    #principal_imagem-fundo{
+@media (max-width: 1060px) {
+    #principal_imagem-fundo {
         display: none;
     }
 }
