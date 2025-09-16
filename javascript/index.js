@@ -1,3 +1,6 @@
+
+
+//CARROSSEL 
 var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,
@@ -14,3 +17,16 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+//BOX PERGUNTAS FREQUENTES
+
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('active');
+
+      const icon = question.querySelector('.faq-icon');
+      icon.textContent = item.classList.contains('active') ? '−' : '+';
+    });
+  });
