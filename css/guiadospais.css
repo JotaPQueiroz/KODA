@@ -320,7 +320,6 @@ body {
 .transparencia_card--conteudo h4 {
     font-family: "Fredoka", sans-serif;
     font-weight: 1000;
-
     color: #fff;
 }
 
@@ -441,6 +440,7 @@ body {
 #certificacao-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 30px;
     margin: auto;
     width: 75%;
@@ -452,8 +452,6 @@ body {
     height: 180px;
     background-size: contain;
     background-repeat: no-repeat;
-    
-
 }
 
 .certificacao_conteudo {
@@ -461,6 +459,7 @@ body {
     flex-direction: column;
     justify-content: left;
     gap: 3vh;
+    width: 70%;
 }
 
 .certificacao_conteudo h3 {
@@ -471,7 +470,7 @@ body {
     text-align: center;
     padding: 10px;
     border-radius: 50px;
-    width: 40%;
+    width: 45%;
     font-size: 17px;
     text-decoration: none;
     font-weight: 600;
