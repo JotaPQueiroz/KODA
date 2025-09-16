@@ -30,3 +30,12 @@ var swiper = new Swiper(".mySwiper", {
       icon.textContent = item.classList.contains('active') ? '−' : '+';
     });
   });
+
+
+  //API DE ACESSIBILIDADE
+  (function(d){
+    var s = d.createElement("script");
+    s.setAttribute("data-account", "SUA_CHAVE");
+    s.src="https://cdn.userway.org/widget.js";
+    (d.body || d.head).appendChild(s);
+  })(document)

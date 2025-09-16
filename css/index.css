@@ -18,6 +18,7 @@ body {
 /* COMEÇO DO SLIDE 1--------------------------------------------------------------------> */
 
 .swiper {
+  margin-top: 80px;
   width: 100%;
   height: 100%;
   background-color: #FFECBE;
@@ -163,6 +164,7 @@ body {
   text-align: left;
   flex-direction: column;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-bottom: 5%;
   gap: 2%;
@@ -192,13 +194,12 @@ body {
 
   font-size: 40px;
   font-family: "Montserrat";
-  height: 200%;
-  width: 60%;
+  height: 80px;
+  width: 300px;
   color: #ffffff;
   background-color: #ED4700;
+  
   font-weight: bolder;
-
-  margin-left: 18%;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgb(0, 0, 0.2);
   border: none;
@@ -316,12 +317,19 @@ body {
 /* COMEÇO DA SECTION 2-----------------------------------------------------------------> */
 
 .secao2 {
-  background-image: url(/imagens/index/SECTION2/ondarosabg.png);
+  background-image: url(../imagens/index/SECTION2/ondarosabg.png);
   background-repeat: no-repeat;
   height: auto;
   width: 100%;
   justify-items: center;
 }
+
+/* #ondarosa2{
+
+  height: 20%;
+  width: 100%;
+  transform: rotate(180deg);
+} */
 
 .secao2 h1 {
   position: relative;
@@ -347,10 +355,10 @@ body {
 }
 
 #crianca1 {
-  background-image: url("/imagens/index/SECTION2/Criança1.png");
+  background-image: url("../imagens/index/SECTION2/Criança1.png");
   background-color: #f8e5dd;
   background-repeat: no-repeat;
-  background-position-y: 65%;
+  background-position:center;
   background-size: cover;
   position: relative;
   width: 50%;
@@ -385,10 +393,10 @@ body {
 }
 
 #crianca2 {
-  background-image: url("/imagens/index/SECTION2/Criança2.png");
+  background-image: url("../imagens/index/SECTION2/Criança2.png");
   background-color: #f8e5dd;
   background-repeat: no-repeat;
-  background-position-y: 70%;
+  background-position:center;
   background-size: cover;
   position: relative;
   width: 50%;
