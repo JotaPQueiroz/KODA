@@ -42,15 +42,15 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    
 }
 
 #principal_imagem-fundo {
     background-image: url(/imagens/guiadospais/koda_fundo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 40%;
+    width: 30%;
     height: 85vh;
-    width: 90%;
 }
 
 #principal_conteudo {
@@ -60,7 +60,7 @@ body {
     padding: 2%;
     justify-content: center;
     height: auto;
-    
+    width: 95%;
 }
 
 #principal_conteudo--titulo-subtitulo {
@@ -93,42 +93,53 @@ body {
     font-weight: 500;
 
 }
-/* Animação Slider */
-.slide{
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    flex-shrink: 0; 
-    overflow-x: hidden; 
-    padding: 20px;
-    width: 90%; 
-    animation: 20s infinite slide linear;
-}
-#cards_slider{
-    display: flex;
-    align-items: center;
-    gap: 2%;
-    overflow: hidden; 
-    scrollbar-width: none; 
-}
 
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-200%);
-    }
-}
-/* Depoimento Grande */
-.principal_conteudo__card-g {
-    height: 150px;
+.principal_conteudo-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 22px 5%;
     background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+/* Animação Slider */
+.slide {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    padding: 20px;
+    width: 90%;
+    animation: 25s infinite slide linear;
+}
+
+#cards_slider {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-210%);
+    }
+}
+
+/* Final Animação Slider */
+
+/* Depoimento Grande */
+.principal_conteudo__card-g {
+    height: 150px;
+    padding: 22px 5%;
     border-radius: 30px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -156,9 +167,7 @@ body {
 }
 
 .card_comentarios p {
-
     font-family: 'Montserrat', sans-serif;
-
 }
 
 #card_comentarios-g h5 {
@@ -169,6 +178,7 @@ body {
     font-size: 18px;
 }
 
+
 /* Depoimentos Médios */
 .principal_conteudo__dois-cards {
     height: auto;
@@ -178,17 +188,11 @@ body {
     gap: 1%;
 }
 
+
 .principal_conteudo__card-m {
-    height: auto;
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 12px 2%;
-    background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 
@@ -217,7 +221,7 @@ body {
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca {
     display: flex;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     justify-content: center;
 }
@@ -227,7 +231,7 @@ body {
     flex-direction: row;
     justify-content: center;
     height: auto;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -241,7 +245,7 @@ body {
 #seguranca_conteudo-imagem {
     background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
     height: 600px;
-    width: 40%;
+    width: 30%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -420,25 +424,29 @@ body {
     color: #2255fc;
     width: 25px;
     height: 25px;
-    border-radius: 100%; 
+    border-radius: 100%;
     box-shadow: 0px 0px 20px 0px rgba(140, 152, 175, 0.25);
 }
+
 .swiper-button-next::after {
-    font-family: 'Font Awesome 6 Free'; 
-    font-weight: 900; 
-    content: '\f054'; 
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f054';
 }
+
 .swiper-button-prev::after {
-    font-family: 'Font Awesome 6 Free'; 
-    font-weight: 900; 
-    content: '\f053'; 
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f053';
 }
-.swiper-button-prev{
-    top:500px; 
+
+.swiper-button-prev {
+    top: 500px;
     left: 5vh;
 }
-.swiper-button-next{
-    top:500px; 
+
+.swiper-button-next {
+    top: 500px;
     right: 5vh;
 }
 
@@ -449,7 +457,6 @@ body {
     height: 10vh;
     width: 100%;
     clear: both;
-
 }
 
 /*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
@@ -551,7 +558,7 @@ body {
     border-radius: 30px;
     padding: 21px;
     width: 55%;
-     box-shadow: 0 4px 5px 0 rgba(140, 152, 175, 0.25);
+    box-shadow: 0 4px 5px 0 rgba(140, 152, 175, 0.25);
 }
 
 .secao_conteudo h5 {
@@ -577,7 +584,7 @@ body {
 }
 
 .icon-bambu {
-    
+
     background-image: url(/imagens/guiadospais/bambu.png);
     width: 8%;
     height: 90px;
@@ -603,5 +610,27 @@ body {
     background-image: url(/imagens/guiadospais/koda_pc.png);
     width: 25%;
     height: 100%;
+}
+
+#star {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 400vh;
+}
+
+#star img:hover {
+    height: 125px;
+}
+
+#atencao {
+    position: absolute;
+    z-index: 2;
+    right: 6%;
+    top: 350vh;
+}
+
+#atencao img:hover {
+    height: 125px;
 }
 
