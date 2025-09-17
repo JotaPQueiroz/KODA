@@ -50,6 +50,7 @@ body {
     background-size: contain;
     width: 40%;
     height: 85vh;
+    width: 90%;
 }
 
 #principal_conteudo {
@@ -92,21 +93,22 @@ body {
     font-weight: 500;
 
 }
-/*Englobando Cards Para Animação Slider*/
+/* Animação Slider */
 .slide{
     display: flex;
     flex-direction: column;
     gap: 2vh;
     flex-shrink: 0; 
+    overflow-x: hidden; 
+    padding: 20px;
     width: 90%; 
-   animation: slide 15s linear infinite; 
+    animation: 20s infinite slide linear;
 }
 #cards_slider{
     display: flex;
     align-items: center;
     gap: 2%;
-    padding-bottom: 20px;
-    overflow-x: hidden; 
+    overflow: hidden; 
     scrollbar-width: none; 
 }
 
@@ -115,7 +117,7 @@ body {
         transform: translateX(0);
     }
     to{
-        transform: translateX(-1040px);
+        transform: translateX(-200%);
     }
 }
 /* Depoimento Grande */
@@ -212,11 +214,10 @@ body {
 
 /*FIM SECAO PRINCIPAL*/
 
-
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca {
     display: flex;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     justify-content: center;
 }
@@ -226,7 +227,7 @@ body {
     flex-direction: row;
     justify-content: center;
     height: auto;
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -272,7 +273,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 30px;
+    gap: 50px;
     margin: auto;
     object-fit: contain;
     height: auto;
