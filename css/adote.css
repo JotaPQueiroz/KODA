@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+  font-family: "Fredoka", sans-serif;
+}
+
+/*COMEÇO DA PRIMEIRA PARTE*/
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+  height: 90vh;
+width: 100%;
+}
+
+main h1 {
+  color: #f55b3d;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.container_1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+gap: 30px;
+}
+
+
+.mascote img {
+  width: 200px;
+  margin-right: 35px;
+}
+
+
+.card {
+  background: #FFF;
+  border: #732C1D solid 2px;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 260px;
+  box-shadow: 0 0 12px rgba(245, 91, 61, 0.7);
+  text-align: left;
+}
+
+.card h2 {
+  color: #F85655;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.card button {
+  background: #ED4700;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: #d9462f;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25); 
+  transform: translateY(-2px); 
+}
+
+
+.viewer {
+  text-align: center;
+}
+
+.viewer img {
+  width: 100%;
+  max-width: 280px;
+  max-height: 350px;
+  object-fit: contain;
+  transition: transform 0.25s ease-in-out;
+}
+
+
+
+.viewer img:hover {
+  transform: scale(1.05);
+}
+
+.viewer p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container_1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    text-align: center;
+  }
+}
+/*FINAL DA PRIMEIRA PARTE*/
+
+
+
+/*COMEÇO DA SEGUNDA PARTE*/
+.reserva-container {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.form-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.ajustar {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+
+
+.orange { color: #f55b3d; font-weight: 700; }
+.red { color: #e63946; font-weight: 700; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contatos {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.contatos div {
+   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contatos img {
+  width: 22.2px;
+  height: 21px;
+}
+
+.koda-card {
+  background: #F4AC47;
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  height: 100vh;
+}
+
+
+.fundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #FFECBE;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    border-radius: 15%;
+    
+}
+.koda-logo {
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.btn-reservar {
+  background: #f55b3d;
+  border: none;
+  padding: 15px 40px;
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: 4px solid #00ff00; /* borda verde neon */
+}
+
+.btn-reservar:hover {
+  background: #d9462f;
+}
+
+/*FINAL DA SEGUNDA PARTE */
+/*MEXER NO SHADOW BOX, BOTÃO TEM QUE FICAR VERDE DEPOIS DE APERTAR, RESPONSIVIDADE*/
