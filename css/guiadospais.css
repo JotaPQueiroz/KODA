@@ -42,7 +42,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-
 }
 
 #principal_imagem-fundo {
@@ -56,10 +55,11 @@ body {
 #principal_conteudo {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 50px;
     padding: 2%;
     justify-content: center;
     height: auto;
+    
 }
 
 #principal_conteudo--titulo-subtitulo {
@@ -92,10 +92,35 @@ body {
     font-weight: 500;
 
 }
+/*Englobando Cards Para Animação Slider*/
+.slide{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    flex-shrink: 0; 
+    width: 90%; 
+   animation: slide 15s linear infinite; 
+}
+#cards_slider{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding-bottom: 20px;
+    overflow-x: hidden; 
+    scrollbar-width: none; 
+}
 
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1040px);
+    }
+}
 /* Depoimento Grande */
 .principal_conteudo__card-g {
-    height: auto;
+    height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -164,6 +189,7 @@ body {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
+
 #card_comentarios-m p {
     font-size: 10px;
 }
@@ -192,6 +218,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100%;
+    justify-content: center;
 }
 
 .seguranca-container {
@@ -199,7 +226,7 @@ body {
     flex-direction: row;
     justify-content: center;
     height: auto;
-    width: 85%;
+    width: 95%;
     margin: auto;
 }
 
@@ -207,12 +234,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 50%;
+    width: 45%;
 }
 
 #seguranca_conteudo-imagem {
     background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
-    height: 650px;
+    height: 600px;
     width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -235,6 +262,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0;
 }
 
@@ -245,11 +273,10 @@ body {
     justify-content: center;
     text-align: center;
     gap: 30px;
+    margin: auto;
     object-fit: contain;
     height: auto;
-    margin: auto;
     width: 75%;
-
 }
 
 .transparencia_subtitulo-texto {
@@ -451,6 +478,7 @@ body {
     height: 180px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .certificacao_conteudo {
@@ -469,7 +497,7 @@ body {
     text-align: center;
     padding: 10px;
     border-radius: 50px;
-    width: 45%;
+    width: 50%;
     font-size: 17px;
     text-decoration: none;
     font-weight: 600;
@@ -493,8 +521,7 @@ body {
 
 .com_koda-container {
     text-align: center;
-    height: auto;
-   margin: auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,21 +546,21 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 21px;
     border-radius: 30px;
-    padding: 15px;
+    padding: 21px;
     width: 55%;
-    word-wrap: break-word;
+     box-shadow: 0 4px 5px 0 rgba(140, 152, 175, 0.25);
 }
 
 .secao_conteudo h5 {
     height: auto;
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 
 .secao_conteudo p {
     height: auto;
-    font-size: 1.2vw;
+    font-size: 18px;
 }
 
 .com-koda--secao-esquerda {
@@ -543,17 +570,18 @@ body {
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
     background-color: var(--azul-bebe);
     border-radius: 400px 50px 50px 50px;
 }
 
 .icon-bambu {
+    
     background-image: url(/imagens/guiadospais/bambu.png);
-    width: 10%;
-    height: 135px;
+    width: 8%;
+    height: 90px;
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 .icon-koda_secao {
@@ -567,18 +595,12 @@ body {
 #koda-joinha {
     background-image: url(/imagens/guiadospais/koda_joinha.png);
     width: 25%;
-    height: 95%;
+    height: 100%;
 }
 
 #koda-no-pc {
     background-image: url(/imagens/guiadospais/koda_pc.png);
     width: 25%;
-    height: 95%;
+    height: 100%;
 }
 
-/*REMOVENDO IMAGEM DE FUNDO SECAO PRINCIPAL QUANDO ATINGIR ESSA LARGURA DE TELA*/
-@media (max-width: 1060px) {
-    #principal_imagem-fundo {
-        display: none;
-    }
-}
