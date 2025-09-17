@@ -14,14 +14,18 @@ new Swiper('.transparencia-container', {
 
   breakpoints: {
     // when window width is >= 320px
-    640: {
+    320: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 50
     },
     // when window width is >= 480px
     768: {
       slidesPerView: 1,
       spaceBetween: 40
+    },
+    1000: {
+      slidesPerView: 1,
+      spaceBetween: 70
     }
   }
 });

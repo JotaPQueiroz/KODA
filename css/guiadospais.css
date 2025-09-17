@@ -42,7 +42,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 #principal_imagem-fundo {
@@ -90,7 +90,7 @@ body {
     color: var(--cor-texto);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
@@ -113,7 +113,8 @@ body {
     overflow-x: hidden;
     padding: 20px;
     width: 90%;
-    animation: 25s infinite slide linear;
+    animation: 50s infinite slide linear;
+    
 }
 
 #cards_slider {
@@ -122,6 +123,7 @@ body {
     gap: 2%;
     overflow: hidden;
     scrollbar-width: none;
+     
 }
 
 @keyframes slide {
@@ -130,7 +132,7 @@ body {
     }
 
     to {
-        transform: translateX(-210%);
+        transform: translateX(-307%);
     }
 }
 
@@ -144,8 +146,7 @@ body {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card_comentarios-imagem-g {
-    background-image: url(/imagens/guiadospais/comentario_1.png);
+.card_imagem-g {
     width: 15%;
     height: 100px;
     background-repeat: no-repeat;
@@ -208,12 +209,44 @@ body {
     background-size: contain;
 }
 
-#card_comentarios-imagem-m1 {
-    background-image: url(/imagens/guiadospais/comentario_2.png);
+/*Imagens dos cards*/
+
+#card_comentarios-imagem-1 {
+    background-image: url(/imagens/guiadospais/comentario_1.png);
 }
 
-#card_comentarios-imagem-m2 {
+#card_comentarios-imagem-2 {
+    background-image: url(/imagens/guiadospais/comentario_2.png);
+}
+#card_comentarios-imagem-3 {
     background-image: url(/imagens/guiadospais/comentario_3.png);
+}
+#card_comentarios-imagem-4 {
+    background-image: url(/imagens/guiadospais/comentario_4.png);
+}
+#card_comentarios-imagem-5 {
+    background-image: url(/imagens/guiadospais/comentario_5.png);
+}
+#card_comentarios-imagem-6 {
+    background-image: url(/imagens/guiadospais/comentario_6.png);
+}
+#card_comentarios-imagem-7 {
+    background-image: url(/imagens/guiadospais/comentario_7.png);
+}
+#card_comentarios-imagem-8 {
+    background-image: url(/imagens/guiadospais/comentario_8.png);
+}
+#card_comentarios-imagem-9 {
+    background-image: url(/imagens/guiadospais/comentario_9.png);
+}
+#card_comentarios-imagem-10 {
+    background-image: url(/imagens/guiadospais/comentario_10.png);
+}
+#card_comentarios-imagem-11 {
+    background-image: url(/imagens/guiadospais/comentario_11.png);
+}
+#card_comentarios-imagem-12 {
+    background-image: url(/imagens/guiadospais/comentario_12.png);
 }
 
 /*FIM SECAO PRINCIPAL*/
@@ -221,7 +254,7 @@ body {
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca {
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 100%;
     justify-content: center;
 }
@@ -232,7 +265,7 @@ body {
     justify-content: center;
     height: auto;
     width: 100%;
-    margin: auto;
+
 }
 
 #seguranca_conteudo-texto {
@@ -534,6 +567,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    width: initial;
 
 }
 
@@ -616,7 +650,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 5%;
-    top: 400vh;
+    top: 370vh;
 }
 
 #star img:hover {
@@ -627,10 +661,263 @@ body {
     position: absolute;
     z-index: 2;
     right: 6%;
-    top: 350vh;
+    top: 320vh;
 }
 
 #atencao img:hover {
-    height: 125px;
+    height: 145px;
 }
 
+@media (max-width: 1023px) {
+    #guia_pais__principal {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-container {
+        justify-content: center;
+    }
+
+    #principal_imagem-fundo {
+        display: none;
+    }
+
+    .certificacao_conteudo h3 {
+        font-size: 2vw;
+    }
+
+    .certificacao_conteudo p {
+        font-size: 1.6vw;
+    }
+
+    .btn_config {
+        font-size: 1.5vw;
+    }
+
+    #star {
+        display: none;
+    }
+
+    #atencao {
+        display: none;
+    }
+
+    .com_koda-container {
+        width: 90%;
+
+    }
+
+    .com-koda--secao-direita,
+    .com-koda--secao-esquerda,
+    .secao_conteudo {
+        max-height: 250px;
+    }
+
+    .secao_conteudo p {
+        font-size: 1.6vw;
+    }
+
+    .btn_saiba-mais {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #guia_pais__principal,
+    #guia_pais__seguranca {
+        height: 80vh;
+    }
+
+
+
+    #card_comentarios-g p {
+        font-size: 10px;
+    }
+
+    .principal_conteudo-card {
+        height: 20vh;
+    }
+
+    #cards_slider {
+        gap: 1%;
+    }
+
+
+    .seguranca-container {
+        width: 80%;
+        align-items: center;
+    }
+
+
+
+    #seguranca_conteudo-texto {
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #seguranca_conteudo-texto p,
+    #seguranca_conteudo-texto h1,
+    #seguranca_conteudo-texto h3 {
+        text-align: center;
+    }
+
+    #seguranca_conteudo-imagem,
+    .card_comentarios-imagem-g,
+    .card-imagem-m {
+        display: none;
+    }
+
+
+    #confira-blog {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .btn_saiba-mais {
+        width: 90%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .transparencia_card--conteudo {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .transparencia_card-container {
+        border-radius: 40px;
+        height: 450px;
+        width: 100%;
+        padding: 0;
+        gap: 10%;
+    }
+
+
+    #certificacao-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .certificacao_conteudo {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certificacao_conteudo h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .certificacao_conteudo p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .btn_config {
+        font-size: 20px;
+    }
+
+    .com-koda--secao-direita {
+        border-radius: 40px;
+        justify-content: right;
+
+
+    }
+
+    .com-koda--secao-esquerda {
+        border-radius: 40px;
+        justify-content: left;
+    }
+
+    .secao_conteudo {
+        width: 60%;
+    }
+
+    .icon-koda_secao {
+        width: 60%;
+    }
+
+    .icon-bambu,
+    #certificacao_koda,
+    .swiper-button-next,
+    .swiper-button-prev,
+    .transparencia_card--imagem,
+    .transparencia_subtitulo-texto {
+        display: none;
+    }
+
+}
+
+@media (max-width: 540px) {
+    #confira-blog {
+        font-size: 20px;
+    }
+
+    .principal_conteudo__dois-cards {
+        display: none;
+    }
+
+    #guia_pais__certificacao {
+        height: auto;
+    }
+
+    .btn_config {
+        font-size: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .guia_pais--titulo {
+        font-size: 34px;
+    }
+
+    .guia_pais--subtitulo {
+        font-size: 28px;
+    }
+
+    .guia_pais--texto {
+        font-size: 14px;
+    }
+
+    .transparencia-container {
+        width: 90%;
+    }
+
+    .icon-koda_secao {
+        display: none;
+    }
+
+    .secao_conteudo {
+        width: 100%;
+        height: 650px;
+        gap: 15px;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .com-koda--secao-direita,
+    .com-koda--secao-esquerda{
+        background-color: var(--cor-fundo-guia-pais);
+    }
+
+    .secao_conteudo:hover {
+        border: 2px solid #ffb764;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .secao_conteudo p {
+        font-size: 13px;
+    }
+
+    .secao_conteudo h5 {
+        font-size: 25px;
+    }
+}
