@@ -1,0 +1,942 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap);
+
+:root {
+    --cor-fundo-footer: #FF8965;
+    --cor-fundo-header: #FF6C3F;
+    --cor-fundo-guia-pais: #FFF4DE;
+    --cor-titulo: #F35F2F;
+    --laranja-btn: #ED4700;
+    --rosa-avermelhado: #F85655;
+    --rosa-avermelhado-claro: #FE7776;
+    --cor-texto: #272727;
+    --bege-claro: #FFD6C0;
+    --laranja-claro: #FF6C3F;
+    --verde-agua: #5DA1B7;
+    --azul-bebe: #7BCAF9;
+    --amarelo-claro: #F4AC47;
+    --laranja-amarronzado: #FF9140;
+    --verde-agua-escuro: #225573;
+}
+
+body {
+    background-color: var(--cor-fundo-guia-pais);
+}
+
+.conteudo {
+    background-color: var(--cor-fundo-guia-pais);
+    margin: auto;
+    width: 100%;
+}
+#ondaLaranja{
+
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+
+}
+/*SECAO PRINCIPAL*/
+#guia_pais__principal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#principal_imagem-fundo {
+    background-image: url(/imagens/guiadospais/koda_fundo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 85vh;
+}
+
+#principal_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2%;
+    justify-content: center;
+    height: auto;
+    width: 95%;
+}
+
+#principal_conteudo--titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.guia_pais--titulo {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    color: var(--cor-titulo);
+}
+
+.guia_pais--subtitulo {
+    font-family: "Fredoka", sans-serif;
+    font-size: 30px;
+    color: var(--rosa-avermelhado);
+
+}
+
+.guia_pais--texto {
+    color: var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.principal_conteudo-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+/* Animação Slider */
+.slide {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    padding: 20px;
+    width: 90%;
+    animation: 50s infinite slide linear;
+    
+}
+
+#cards_slider {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    overflow: hidden;
+    scrollbar-width: none;
+     
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-307%);
+    }
+}
+
+/* Final Animação Slider */
+
+/* Depoimento Grande */
+.principal_conteudo__card-g {
+    height: 150px;
+    padding: 22px 5%;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card_imagem-g {
+    width: 15%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card_comentarios {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-style: italic;
+}
+
+.card_comentarios h5 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+.card_comentarios p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#card_comentarios-g h5 {
+    font-size: 20px;
+}
+
+#card_comentarios-g p {
+    font-size: 18px;
+}
+
+
+/* Depoimentos Médios */
+.principal_conteudo__dois-cards {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+}
+
+
+.principal_conteudo__card-m {
+    width: 50%;
+    padding: 12px 2%;
+    border-radius: 20px;
+}
+
+
+#card_comentarios-m p {
+    font-size: 10px;
+}
+
+.card-imagem-m {
+    width: 40%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Imagens dos cards*/
+
+#card_comentarios-imagem-1 {
+    background-image: url(/imagens/guiadospais/comentario_1.png);
+}
+
+#card_comentarios-imagem-2 {
+    background-image: url(/imagens/guiadospais/comentario_2.png);
+}
+#card_comentarios-imagem-3 {
+    background-image: url(/imagens/guiadospais/comentario_3.png);
+}
+#card_comentarios-imagem-4 {
+    background-image: url(/imagens/guiadospais/comentario_4.png);
+}
+#card_comentarios-imagem-5 {
+    background-image: url(/imagens/guiadospais/comentario_5.png);
+}
+#card_comentarios-imagem-6 {
+    background-image: url(/imagens/guiadospais/comentario_6.png);
+}
+#card_comentarios-imagem-7 {
+    background-image: url(/imagens/guiadospais/comentario_7.png);
+}
+#card_comentarios-imagem-8 {
+    background-image: url(/imagens/guiadospais/comentario_8.png);
+}
+#card_comentarios-imagem-9 {
+    background-image: url(/imagens/guiadospais/comentario_9.png);
+}
+#card_comentarios-imagem-10 {
+    background-image: url(/imagens/guiadospais/comentario_10.png);
+}
+#card_comentarios-imagem-11 {
+    background-image: url(/imagens/guiadospais/comentario_11.png);
+}
+#card_comentarios-imagem-12 {
+    background-image: url(/imagens/guiadospais/comentario_12.png);
+}
+
+/*FIM SECAO PRINCIPAL*/
+
+/*SECAO SEGURANÇA DIGITAL*/
+#guia_pais__seguranca {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.seguranca-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+
+}
+
+#seguranca_conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+}
+
+#seguranca_conteudo-imagem {
+    background-image: url(/imagens/guiadospais/menina_negra_com_tablet.png);
+    height: 600px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#confira-blog {
+    background-color: var(--laranja-claro);
+    color: #fff;
+}
+
+#confira-blog:hover {
+    background-color: var(--laranja-btn);
+}
+
+/*FIM SECAO SEGURANÇA DIGITAL*/
+
+/*INICIO SECAO TRANSPARENCIA PLATAFORMA*/
+#guia_pais__transparencia {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.transparencia-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    margin: auto;
+    object-fit: contain;
+    height: auto;
+    width: 75%;
+}
+
+.transparencia_subtitulo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#card_container {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.transparencia_card-container {
+    width: 100%;
+    padding: 20px;
+    gap: 5%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 0 40px 0;
+    transition: 0.6s ease;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+#transparencia_card-1 {
+    background-color: var(--verde-agua);
+}
+
+#transparencia_card-1:hover {
+    background-color: var(--azul-bebe);
+}
+
+#transparencia_card-2 {
+    background-color: var(--rosa-avermelhado);
+}
+
+#transparencia_card-2:hover {
+    background-color: var(--rosa-avermelhado-claro)
+}
+
+#transparencia_card-3 {
+    background-color: var(--laranja-amarronzado);
+}
+
+#transparencia_card-3:hover {
+    background-color: var(--amarelo-claro);
+}
+
+.transparencia_card--conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.transparencia_card--conteudo h4 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 1000;
+    color: #fff;
+}
+
+.transparencia_card--conteudo p {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn_saiba-mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    padding: 21px;
+    border-radius: 50px;
+    width: 40%;
+
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.btn_saiba-mais:hover {
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
+}
+
+#btn_seguranca {
+    color: var(--verde-agua);
+}
+
+#btn_metodologias {
+    color: var(--rosa-avermelhado);
+}
+
+#btn_jornada {
+    color: var(--laranja-amarronzado);
+}
+
+.transparencia_card--imagem {
+    width: 35%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+#card_imagem-1 {
+    background-image: url(/imagens/guiadospais/familia_card_1.png);
+
+}
+
+#card_imagem-2 {
+    background-image: url(/imagens/guiadospais/familia_card_2.png);
+}
+
+#card_imagem-3 {
+    background-image: url(/imagens/guiadospais/familia_card_3.png);
+}
+
+/*Configuracoes dos botoes dos cards*/
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2255fc;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(140, 152, 175, 0.25);
+}
+
+.swiper-button-next::after {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f054';
+}
+
+.swiper-button-prev::after {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f053';
+}
+
+.swiper-button-prev {
+    top: 500px;
+    left: 5vh;
+}
+
+.swiper-button-next {
+    top: 500px;
+    right: 5vh;
+}
+
+
+/*Configuracao da onda*/
+.onda {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    clear: both;
+}
+
+/*FINAL SECAO TRANSPARENCIA COM A PLATAFORMA*/
+
+/*INICIO SECAO CERTIFICACAO*/
+#guia_pais__certificacao {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--azul-bebe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#certificacao-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    width: 75%;
+}
+
+#certificacao_koda {
+    background-image: url(/imagens/guiadospais/koda_certificacao.png);
+    width: 40%;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.certificacao_conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3vh;
+    width: 70%;
+}
+
+.certificacao_conteudo h3 {
+    color: var(--verde-agua-escuro);
+}
+
+.btn_config {
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    width: 50%;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--verde-agua-escuro);
+    background-color: #fff;
+}
+
+.btn_config:hover {
+    transition: 0.6s all;
+    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
+}
+
+/* INICIO SEÇÃO SEGURANÇA COM KODA */
+#guia_pais_com-koda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.com_koda-container {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: initial;
+
+}
+
+.com-koda--secao-direita {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 25px;
+    background-color: var(--rosa-avermelhado-claro);
+    border-radius: 50px 300px 50px 50px;
+}
+
+.secao_conteudo {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    border-radius: 30px;
+    padding: 21px;
+    width: 55%;
+    box-shadow: 0 4px 5px 0 rgba(140, 152, 175, 0.25);
+}
+
+.secao_conteudo h5 {
+    height: auto;
+    font-size: 25px;
+}
+
+.secao_conteudo p {
+    height: auto;
+    font-size: 18px;
+}
+
+.com-koda--secao-esquerda {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--azul-bebe);
+    border-radius: 400px 50px 50px 50px;
+}
+
+.icon-bambu {
+
+    background-image: url(/imagens/guiadospais/bambu.png);
+    width: 8%;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-koda_secao {
+    width: 30%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#koda-joinha {
+    background-image: url(/imagens/guiadospais/koda_joinha.png);
+    width: 25%;
+    height: 100%;
+}
+
+#koda-no-pc {
+    background-image: url(/imagens/guiadospais/koda_pc.png);
+    width: 25%;
+    height: 100%;
+}
+
+#star {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 370vh;
+}
+
+#star img:hover {
+    height: 125px;
+}
+
+#atencao {
+    position: absolute;
+    z-index: 2;
+    right: 6%;
+    top: 320vh;
+}
+
+#atencao img:hover {
+    height: 145px;
+}
+
+@media (max-width: 1023px) {
+    #guia_pais__principal {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-container {
+        justify-content: center;
+    }
+
+    #principal_imagem-fundo {
+        display: none;
+    }
+
+    .certificacao_conteudo h3 {
+        font-size: 2vw;
+    }
+
+    .certificacao_conteudo p {
+        font-size: 1.6vw;
+    }
+
+    .btn_config {
+        font-size: 1.5vw;
+    }
+
+    #star {
+        display: none;
+    }
+
+    #atencao {
+        display: none;
+    }
+
+    .com_koda-container {
+        width: 90%;
+
+    }
+
+    .com-koda--secao-direita,
+    .com-koda--secao-esquerda,
+    .secao_conteudo {
+        max-height: 250px;
+    }
+
+    .secao_conteudo p {
+        font-size: 1.6vw;
+    }
+
+    .btn_saiba-mais {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #principal_conteudo--titulo-subtitulo{
+        padding-top: 40px;
+    }
+
+    
+    #ondaLaranja{
+
+      position: relative;
+      width: 100%;
+      height: 18px;
+
+    }
+    #guia_pais__principal,
+    #guia_pais__seguranca {
+        height: 80vh;
+    }
+
+
+
+    #card_comentarios-g p {
+        font-size: 10px;
+    }
+
+    .principal_conteudo-card {
+        height: 20vh;
+    }
+
+    #cards_slider {
+        gap: 1%;
+    }
+
+
+    .seguranca-container {
+        width: 80%;
+        align-items: center;
+    }
+
+
+
+    #seguranca_conteudo-texto {
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #seguranca_conteudo-texto p,
+    #seguranca_conteudo-texto h1,
+    #seguranca_conteudo-texto h3 {
+        text-align: center;
+    }
+
+    #seguranca_conteudo-imagem,
+    .card_imagem-g,
+    .card-imagem-m {
+        display: none;
+    }
+
+
+    #confira-blog {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .btn_saiba-mais {
+        width: 90%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .transparencia_card--conteudo {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .transparencia_card-container {
+        border-radius: 40px;
+        height: 450px;
+        width: 100%;
+        padding: 0;
+        gap: 10%;
+    }
+
+
+    #certificacao-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .certificacao_conteudo {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certificacao_conteudo h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .certificacao_conteudo p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .btn_config {
+        font-size: 20px;
+    }
+
+    .com-koda--secao-direita {
+        border-radius: 40px;
+        justify-content: right;
+
+
+    }
+
+    .com-koda--secao-esquerda {
+        border-radius: 40px;
+        justify-content: left;
+    }
+
+    .secao_conteudo {
+        width: 60%;
+    }
+
+    .icon-koda_secao {
+        width: 60%;
+    }
+
+    .icon-bambu,
+    #certificacao_koda,
+    .swiper-button-next,
+    .swiper-button-prev,
+    .transparencia_card--imagem,
+    .transparencia_subtitulo-texto {
+        display: none;
+    }
+
+}
+
+@media (max-width: 540px) {
+    #confira-blog {
+        font-size: 20px;
+    }
+
+    .principal_conteudo__dois-cards {
+        display: none;
+    }
+
+    #guia_pais__certificacao {
+        height: auto;
+    }
+
+    .btn_config {
+        font-size: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .guia_pais--titulo {
+        font-size: 34px;
+    }
+
+    .guia_pais--subtitulo {
+        font-size: 28px;
+    }
+
+    .guia_pais--texto {
+        font-size: 14px;
+    }
+
+    .transparencia-container {
+        width: 90%;
+    }
+
+    .icon-koda_secao {
+        display: none;
+    }
+
+    .secao_conteudo {
+        width: 100%;
+        height: 650px;
+        gap: 15px;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .com-koda--secao-direita,
+    .com-koda--secao-esquerda{
+        background-color: var(--cor-fundo-guia-pais);
+    }
+
+    .secao_conteudo:hover {
+        border: 2px solid #ffb764;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .secao_conteudo p {
+        font-size: 13px;
+    }
+
+    .secao_conteudo h5 {
+        font-size: 25px;
+    }
+}
