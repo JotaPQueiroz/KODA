@@ -18,7 +18,7 @@ body {
 /* COMEÇO DO SLIDE 1--------------------------------------------------------------------> */
 
 .swiper {
-  margin-top: 80px;
+  margin-top: 0px;
   width: 100%;
   height: 100%;
   background-color: #FFECBE;
@@ -318,10 +318,18 @@ body {
 
 .secao2 {
   background-image: url(../imagens/index/SECTION2/ondarosabg.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 60px 20px;
+  min-height: 600px; 
+  /* background-repeat: no-repeat;
   height: auto;
   width: 100%;
   justify-items: center;
+   */
 }
 
 /* #ondarosa2{
@@ -349,6 +357,7 @@ body {
   height: 30%;
   display: flex;
   align-items: center;
+  margin-left: 12%;
   margin-top: 3%;
   gap: 5%;
 
@@ -388,6 +397,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 5%;
+  margin-left: 12%;
   gap: 5%;
 
 }
