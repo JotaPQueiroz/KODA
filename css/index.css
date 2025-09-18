@@ -84,10 +84,11 @@ body {
 
 #brilhos {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 7%;
+  width: 450px;
+  height: 400px;
+  right: 5px;
   z-index: 1;
+
   overflow: visible;
 
 
