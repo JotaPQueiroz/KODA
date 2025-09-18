@@ -1,0 +1,476 @@
+  body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background: #FFECBE;
+    text-align: center;
+  }
+
+  /*tira a rolagem horizontal tanto em mobile quanto desktop*/
+  body, html {
+     overflow-x: hidden;
+}
+
+.onda-navbar{
+      position: relative;
+      width: 100%;
+      height: 30px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  header h1,h2 {
+    color: #FF6C3F;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  header p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #732C1D;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .side-image {
+  position: absolute; 
+  top: -20%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 130px; 
+  z-index: 10; 
+}
+
+  .phone-container {
+    position: relative;
+    width: 250px;
+  }
+
+  .phone-container img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    z-index: 2; 
+  }
+
+  
+.title-card {
+  position: absolute;
+  top: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7BCAF9;
+  color: white;
+  padding: 16px 0;
+  width: 200px; 
+  text-align: center; 
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1; 
+  white-space: nowrap; 
+}
+
+.text-card {
+  position: absolute;
+  top: 50%; 
+  width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #7BCAF9;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 14px;
+  line-height: 1.4em;
+  transform: translateY(-50%); 
+  z-index: 1; 
+  text-align: left;
+}
+
+.phone-container.left .text-card {
+  left: -240px; 
+}
+
+.phone-container.right .text-card {
+  right: -240px; 
+}
+
+.koda-deitado {
+  position: absolute;
+  top: 300px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  z-index: 5;
+}
+
+/*Responvidade mobile*/
+@media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; 
+    }
+
+    .onda-navbar{
+      position: relative;
+      width: 100%;
+      height: 18px;
+  }
+
+    .phone-container {
+      width: 250px;
+      margin-bottom: 20px; 
+    }
+
+    .text-card {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      transform: none;
+      width: 250px;
+      text-align: center;
+      margin-top: 10px;
+      z-index: 3;
+    }
+
+  .koda-deitado {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 80vw;
+    max-width: 250px;
+    margin: -120px auto -60px; /* espaço encima e embaixo */
+    display: block;
+    z-index: 3;
+  }
+
+  .side-image {
+    position: relative;
+    top: auto;
+    left: -20%;
+    transform: none;
+    margin: 0 10px;
+    display: block;
+    width: 120px;
+    z-index: 5;
+  }
+}
+
+/* -------------------------ESTILIZAÇÃO: CONHECENDO A PELUCIA --------------------------- */
+.pelucia-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  padding: 40px 0;
+}
+
+.pelucia-section {
+  background-image: url('../imagens/FooterHeader/appkoda/fundo-onda.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 60px 20px;
+  min-height: 600px;
+}
+
+.right-side-image {
+  position: absolute;
+  top: 20px;
+  right: -80px;
+  width: 290px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pelucia-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Pelúcia - canto superior esquerdo */
+.pelucia-item.left {
+  top: 0;
+  left: 0;
+  padding-left: 40px;
+  flex-direction: row;
+}
+
+/* Quiz - canto inferior direito */
+.pelucia-item.right {
+  bottom: 0;
+  right: 0;
+  padding-right: 40px;
+  flex-direction: row-reverse;
+}
+
+.text-card-rosa {
+  background: #F85655;
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+  margin: 0;
+}
+
+.img-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.label {
+  position: static;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #FFDFB3;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.pelucia-img {
+  width: 290px;
+  position: relative;
+  z-index: 2;
+  margin-right: -20px;
+}
+
+.quiz-img {
+  width: 290px;
+  position: relative;
+  z-index: 2;
+  transform: rotate(-5deg);
+  margin-left: -20px;
+}
+
+/* RESPONSIVIDADE PELUCIA */
+@media (max-width: 900px) {
+  .pelucia-container {
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pelucia-item {
+    position: relative;
+    margin: 10px 0;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0;
+  }
+
+  .pelucia-item.left, .pelucia-item.right {
+    padding: 0;
+  }
+
+  .pelucia-img, .quiz-img {
+    width: 80vw;
+    max-width: 300px;
+    margin: 0;
+    transform: none !important;
+  }
+
+  .text-card-rosa {
+    width: 90vw;
+    max-width: 320px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .right-side-image {
+    position: relative;
+    width: 230px;
+    right: -90px;
+    margin-top: 10px;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .phone-container {
+    width: 90vw;
+    max-width: 300px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-container img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    top: -35;
+  }
+
+  .title-card {
+    position: absolute; 
+    top: -30px;         
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    width: 80%;
+    max-width: 250px;
+    padding: 10px 0;
+    background: rgba(123, 202, 249, 0.9);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+  }
+}
+
+/* ------------------ AJUSTE DOS CARDS EXPLICATIVOS ------------------ */
+@media (max-width: 900px) {
+  .phone-container {
+    width: 90vw;
+    max-width: 300px;
+  }
+
+  .text-card {
+    width: 90%;
+    max-width: 300px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .text-card {
+  position: relative;
+  margin-top: 12px; 
+  width: 220px;
+  padding: 16px 20px;
+  border-radius: 15px;
+  background: #7BCAF9;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Remove deslocamento antigo */
+.phone-container.left .text-card,
+.phone-container.right .text-card {
+  left: auto;
+  right: auto;
+  transform: none;
+}
+}
+
+/* --- Fade + Slide --- */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s ease-out;
+}
+.slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s ease-out;
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* --- Bounce leve --- */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+.bounce {
+  animation: bounce 1.2s ease infinite;
+}
+
+/* --- Rotate leve --- */
+@keyframes rotate {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+.rotate {
+  display: inline-block;
+  animation: rotate 3s ease-in-out infinite;
+}
+
+/* --- Shadow pulse --- */
+@keyframes shadowPulse {
+  0%, 100% { box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+  50% { box-shadow: 0 0 15px rgba(0,0,0,0.4); }
+}
+.shadow-pulse {
+  animation: shadowPulse 2s ease-in-out infinite;
+  border-radius: 10px;
+}
+
+/*--------------- Flutuação para as imagens de marca d'agua e brilho--------------- */
+.side-image {
+  position: absolute;
+  top:-20px;
+  left: 10%;
+  animation: float 4s ease-in-out infinite alternate;
+  z-index: 1; 
+  transform: translateY(-50%);
+  width: 130px; 
+}
+
+.right-side-image {
+  position: absolute;
+  top: 20px; 
+  opacity: 0.5;
+  animation: float 6s ease-in-out infinite alternate;
+  z-index: 0; 
+  right: -80px;
+  width: 290px;
+  pointer-events: none;
+}
+
+/* flutuação */
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-10px) translateX(5px); }
+  50% { transform: translateY(0px) translateX(0px); }
+  75% { transform: translateY(10px) translateX(-5px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
