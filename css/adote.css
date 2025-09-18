@@ -1,45 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-* {
+/*================ PRIMEIRA PARTE ================*/
+
+
+body {
   font-family: "Fredoka", sans-serif;
 }
 
-/*COMEÇO DA PRIMEIRA PARTE*/
-
 main {
+  background: #FFECBE;
   padding: 40px 20px;
   text-align: center;
-  height: 90vh;
-width: 100%;
+  width: 100%;
 }
 
 main h1 {
   color: #f55b3d;
   margin-bottom: 30px;
   font-size: 50px;
+  font-weight: 700;
 }
 
 .container_1 {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: flex-start;
-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* centralizado verticalmente */
+  gap: 40px;
 }
-
 
 .mascote img {
-  width: 200px;
-  margin-right: 35px;
+  width: 220px; /* tamanho igual ao print */
 }
-
 
 .card {
   background: #FFF;
   border: #732C1D solid 2px;
   border-radius: 25px;
-  padding: 20px;
-  max-width: 260px;
+  padding: 25px;
+  max-width: 280px;
   box-shadow: 0 0 12px rgba(245, 91, 61, 0.7);
   text-align: left;
 }
@@ -48,32 +47,35 @@ gap: 30px;
   color: #F85655;
   margin-bottom: 10px;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .card p {
   margin-bottom: 15px;
-  font-size: 19px;
+  font-size: 18px;
+  line-height: 1.3em;
 }
 
 .card button {
   background: #ED4700;
   color: #fff;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 45px;
   font-size: 30px;
-  font-weight: 600;
-  border-radius: 8px;
+  font-weight: 700;
+  border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .card button:hover {
   background: #d9462f;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25); 
-  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
 }
-
 
 .viewer {
   text-align: center;
@@ -81,74 +83,60 @@ gap: 30px;
 
 .viewer img {
   width: 100%;
-  max-width: 280px;
-  max-height: 350px;
+  max-width: 300px;
+  height: auto;
   object-fit: contain;
   transition: transform 0.25s ease-in-out;
 }
-
-
 
 .viewer img:hover {
   transform: scale(1.05);
 }
 
 .viewer p {
-  margin-top: 8px;
+  margin-top: 5px;
   font-weight: bold;
+  font-size: 16px;
+  color: #732C1D;
 }
 
+/*================ SEGUNDA PARTE (FORMULÁRIO) ================*/
 
-
-
-@media (max-width: 768px) {
-  .container_1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    text-align: center;
-  }
-}
-/*FINAL DA PRIMEIRA PARTE*/
-
-
-
-/*COMEÇO DA SEGUNDA PARTE*/
-.reserva-container {
-  background: white;
+.reserva-container{
   display: flex;
-  justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  width: 100%;
-  height: auto;
+  background: #FFF;               
+  border-radius: 18px;            
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12); 
+  overflow: hidden;              
+  margin: 40px auto;            
+  max-width: 1100px;
+  height: 100vh;              
 }
 
 .form-section {
   flex: 1;
-  padding: 40px;
+  padding: 50px;
+  background: #fff;
 }
 
+
 .form-section h1 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 10px;
+  font-weight: 700;
+  color: #f55b3d;
 }
 
 .form-section h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
-
 
 .ajustar {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-
-
 
 .orange { color: #f55b3d; font-weight: 700; }
 .red { color: #e63946; font-weight: 700; }
@@ -161,76 +149,216 @@ form {
 
 form input {
   padding: 12px;
-  border: 1px solid #555;
-  border-radius: 6px;
-  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 17px;
+  width: 78%;
 }
 
 .contatos {
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;
   gap: 20px;
   font-size: 14px;
+  align-items: center;
+  flex-wrap: wrap;       /* permite quebra limpa em telas pequenas */
+  justify-content: flex-start;
 }
 
-.contatos div {
-   margin-top: 10px;
-  display: flex;
+.contatos > div {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  margin: 0;             /* remove margem superior que atrapalhava */
+  white-space: nowrap;   /* evita que o ícone e o texto quebrem separadamente */
 }
 
 .contatos img {
-  width: 22.2px;
-  height: 21px;
+  width: 22px;
+  height: 20px;
+  flex: 0 0 auto;
 }
+
+
+/*================ CARD DA LOGO E BOTÃO RESERVAR ================*/
 
 .koda-card {
   background: #F4AC47;
-  flex: 0.7;
+  height: 101vh !important;
+  margin-top: -41px;
+  flex: 0.6;
+  display: flex;
+  margin-right: -20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  border-radius: 0 0 18px;
+  
+}
+
+.fundo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  background-color: #FFECBE;
+  border-radius: 35px;
   position: relative;
-  height: 100vh;
+  height: 82vh;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  right: 120px; 
 }
 
-
-.fundo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:  #FFECBE;
-    width: 100%;
-    height: 90%;
-    position: relative;
-    border-radius: 15%;
-    
-}
 .koda-logo {
   width: 350px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .btn-reservar {
-  background: #f55b3d;
+  background: #ED4700;
   border: none;
-  padding: 15px 40px;
-  font-size: 45px;
+  padding: 12px 35px;
+  font-size: 50px;
   color: white;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
-  outline: 4px solid #00ff00; /* borda verde neon */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border: #28a745 5px solid;
 }
 
 .btn-reservar:hover {
-  background: #d9462f;
+  transform: scale(1.05);
 }
 
-/*FINAL DA SEGUNDA PARTE */
-/*MEXER NO SHADOW BOX, BOTÃO TEM QUE FICAR VERDE DEPOIS DE APERTAR, RESPONSIVIDADE*/
+/* estado confirmado */
+.btn-reservar.reservado {
+  background: #28a745;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+button {
+  font-family: "Fredoka", sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+  .reserva-container {
+    flex-direction: column;
+    height: auto;
+    max-width: 95%;
+  }
+
+  .koda-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fundo {
+    background: transparent !important;
+    box-shadow: none !important;
+    height: auto;
+    width: auto;
+    padding: 0;
+    border-radius: 0;
+    right: 0; 
+  }
+
+  .koda-logo {
+    display: none; 
+  }
+
+  .btn-reservar {
+    font-size: 36px;
+    padding: 12px 28px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .form-section {
+    padding: 30px 20px;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 32px;
+  }
+
+  .container_1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .card button {
+    font-size: 24px;
+    padding: 10px 30px;
+  }
+
+  .viewer img {
+    max-width: 220px;
+  }
+
+  .btn-reservar {
+    font-size: 28px;
+  }
+
+  .fundo {
+    right: 0; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 26px;
+  }
+
+  .mascote img {
+    width: 150px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .viewer img {
+    max-width: 180px;
+  }
+
+  form input {
+    font-size: 15px;
+  }
+
+  .btn-reservar {
+    font-size: 22px;
+  }
+
+  .fundo {
+    right: 0; 
+  }
+}

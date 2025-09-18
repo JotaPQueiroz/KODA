@@ -16,9 +16,27 @@ urso.addEventListener("click", () => {
 document.getElementById("reservaForm").addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Reserva enviada com sucesso!");
+
+  const botao = document.querySelector(".btn-reservar");
+
+  
+  botao.classList.add("reservado");
+  botao.textContent = "Reservado";
+  botao.disabled = true; 
+});
+
+//ROLAR
+
+const botaoPreco = document.querySelector(".card button");
+
+
+botaoPreco.addEventListener("click", () => {
+  const formulario = document.getElementById("formulario-reserva");
+  formulario.scrollIntoView();
 });
 
 
+//FIM DA SEGUNDA PARTE E TELA ROLAR
 
 //API DE ACESSIBILIDADE
   (function(d){
