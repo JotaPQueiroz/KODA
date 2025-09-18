@@ -11,8 +11,8 @@
 </head>
 <body>
     <!--inicio da Header-------------------------------------------------------------------------------------------------->
-    <header class="navbar">
-        <div class="container">
+<header class="navbar">
+        <div class="container-navbar">
             <!-- Ícone de menu-->
             <div class="menu-toggle" id="menu-toggle">
                 &#9776; <!-- codigo do icone de menu-->
@@ -28,21 +28,80 @@
             </nav>
         </div>
     </header>
-    <!--Final da Header--------------------------------------------------------------------------------------------------->
 
     <!-- CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
+    <img id = ondaLaranja src="/imagens/adote/Exclude.png" alt="onda laranja">
+
+    <main>
+        
+    <h1>Adote seu KODA</h1>
+    <div class="container_1">
+     
+      <div class="mascote">
+        <img src="../imagens/adote/esq.png" alt="Mascote KODA">
+      </div>
+
+      
+      <div class="card">
+        <h2>COMPRAR</h2>
+        <p>
+          Leve para casa a amigável pelúcia KODA, o sofisticado panda vermelho. 
+          Ele é macio, adorável e pronto para se tornar o novo amigo do seu filho.
+        </p>
+        <button>R$ 99,00</button>
+      </div>
+
+    
+      <div class="viewer">
+        <img id="urso" src="../imagens/adote/urso1.png" alt="Koda pelúcia">
+        <p id="contador">1/4</p>
+      </div>
+    </div>
+  </main>
 
 
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
+  <!--COMEÇO DA SEGUNDA PAGINA(FORMULARIO)-->
+   <main class="reserva-container" id="formulario-reserva">
+    
+    <section class="form-section">
+        <div class="ajustar">
+      <h1><span class="orange">Reserve Agora!</span></h1>
+      <h2>Insira seus <span class="red">Dados</span></h2>
+      </div>
+
+      <form id="reservaForm">
+        <input type="text" placeholder="Nome:" required>
+        <input type="tel" placeholder="Celular:" required>
+        <input type="email" placeholder="Email:" required>
+        <input type="text" placeholder="CPF:" required>
+        <input type="text" placeholder="Endereço:" required>
+      </form>
+
+     
+      <div class="contatos">
+        <div><img src="../imagens/adote/Vector.png" alt="Telefone"> <span>Telefone<br>11 99999-0000</strong></span></div>
+        <div><img src="../imagens/adote/a688762f.png" alt="Email"> <span>E-mail<br>koda@suporte.com</strong></span></div>
+        <div><img src="../imagens/adote/Vector (1).png" alt="Endereço"> <span>Endereço<br>Rua xxxx - xxx</strong></span></div>
+      </div>
+    </section>
+
+
+    <section class="koda-card">
+        <div class="fundo">
+      <img src="../imagens/adote/LogoKODAPNG.png" alt="Koda" class="koda-logo">
+      <button type="submit" form="reservaForm" class="btn-reservar">Reservar</button>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  
+ 
+
+
+  
 
 
     
@@ -111,10 +170,22 @@
         </div>
 
     </footer>
-    <!--Final da footer-------------------------------------------------------------------------------------------------->> 
+    <!--Final da footer-------------------------------------------------------------------------------------------------->
 <!-- CONTEUDO JAVASCRIPT -->
     <script src="/javascript/adote.js"></script>
     <script src="/javascript/menu-navbar.js"></script>
-<!--final do JAVASCRIPT----------------------------------------------------------------------------------------------->
+ <!--final do JAVASCRIPT----------------------------------------------------------------------------------------------->
+ <!-- inicio da api de libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+      <!--fim da API de libras-->
 </body>
 </html>

@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Fredoka', sans-serif;
+    position: relative;
+    color: #ffecbe;
+}
+body{
+
+    background-color: #ffecbe;
+}
+#ondaLaranja{
+
+width: 100%;
+height: 30px;
+}
+
+section {
+    background-color: #ffecbe; 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 5%;
+}
+
+#contato { 
+    display: flex;
+    width: 900px; 
+    height: 600px; 
+    background-color: rgb( 243 ,95 ,47); 
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#div-left {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 600px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: left;
+    
+}
+
+#div-left h1 {
+    color: black;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+   
+}
+
+#div-left span {
+    color: #F35F2F;
+}
+
+#div-left p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; /* Adiciona um espaço de 20px entre cada campo */
+}
+
+/* Estilos para os campos de input */
+form input {
+    width: 75%;
+    padding: 15px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+/* Estilo do botão "Enviar" */
+form button {
+    width: 20%;
+    height: 30px;
+    background-color: #E96B3E;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 190px;
+}
+
+form #maps {
+    display: flex;
+    flex: row;
+}
+
+form button:hover {
+    background-color: #732C1D;
+}
+
+
+#info-contato {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+    margin-top: 20px; 
+    
+    
+}
+
+#info-contato .info p {
+    font-size: 13px;
+    color: black;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+#maps {
+    flex-wrap: wrap-reverse;
+    position: absolute;
+    background-color: #903434;
+    top: 100px;
+    left: 86%;           
+    width: 330px;
+    height: 400px;
+    border-radius: 20px;
+    border: 2px solid rgb(169, 169, 169);
+    
+}
+
+/*MEDIA QUERY */
+
+@media (max-width: 840px) {
+
+    #contato {
+        width:350px;
+    }
+
+     #ondaLaranja{
+
+      position: relative;
+      width: 100%;
+      height: 18px;
+     }
+
+    #div-left {
+        width:300px;
+        border-radius: 40px;
+        
+    }
+  
+
+    form input {
+        margin: auto;
+    }
+
+
+    form button {
+   
+    margin: auto;
+    }
+
+    #div-left h1 {
+    
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #div-left p {
+   
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 0px;
+    }
+
+
+    #div-left {
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #maps {
+        display: none;
+    }
+
+    #info-contato .info p {
+        font-size: 12px;
+    }
+}

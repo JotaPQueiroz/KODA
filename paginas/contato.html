@@ -12,8 +12,8 @@
 </head>
 <body>
     <!--inicio da Header-------------------------------------------------------------------------------------------------->
-    <header class="navbar">
-        <div class="container">
+  <header class="navbar">
+        <div class="container-navbar">
             <!-- Ícone de menu-->
             <div class="menu-toggle" id="menu-toggle">
                 &#9776; <!-- codigo do icone de menu-->
@@ -32,19 +32,66 @@
     <!--Final da Header--------------------------------------------------------------------------------------------------->
 
     <!-- CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
+    <img id = ondaLaranja src="/imagens/adote/Exclude.png" alt="onda laranja">
+    <section>
+    <div id="contato">
+        <div id="div-left">
+            <h1>Entre em <span>Contato!</span></h1>
+            <p>Entre em contato com nossa equipe! Estamos <br> 
+                prontos para tirar suas dúvidas e ouvir suas<br>
+                sugestões.
+            </p>
 
+            <form action="https://formsubmit.co/koda.orgg@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nome:">
+                <input type="tel" name="tel" placeholder="Celular:">
+                <input type="email" name="email" placeholder="email:">
+                <input type="text" name="text" placeholder="Endereço:">
+                <input type="hidden" name="_autoresponse" value="Funfo">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/contato.html">
+                <button type="submit">Enviar</button>
+            </form>
 
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
-    <h1>PROGRAME AQUI</h1>
+            <div id="info-contato">
+                <div class="info">
+                     <p>&#128222; Telefone<br><span>99999-0000</span></p>
+                </div>
+                <div class="info">
+                    <p>&#128231; E-mail<br><span>email@suporte.com</span></p>
+                </div>
+                <div class="info">
+                    <p>&#128205; Endereço<br><span>Senac Lapa Tito</span></p>
+                </div>
+            </div>
+                
+                <div id="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1229200301377!2d-46.69433512406857!3d-23.528080960371458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1757681332390!5m2!1spt-BR!2sbr" width="330" height="400" style="border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            
+        </div>
 
+        
+    </div>
+    </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+        (function(d){
+        var s = d.createElement("script");
+        s.setAttribute("data-account", "SUA_CHAVE");
+        s.src="https://cdn.userway.org/widget.js";
+        (d.body || d.head).appendChild(s);
+      })(document)
+    </script>
 
     
     <!-- FINAL DO CONTEÙDO DA PÁGINA ----------------------------------------------------------------------------------------------->
