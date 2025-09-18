@@ -19,11 +19,13 @@
     --verde-agua-escuro: #225573;
 }
 
-body {
+body, html {
     background-color: var(--cor-fundo-guia-pais);
+    
 }
 
 .conteudo {
+    position: relative;
     background-color: var(--cor-fundo-guia-pais);
     margin: auto;
     width: 100%;
@@ -34,11 +36,11 @@ body {
     width: 100%;
     height: 30px;
 
-
 }
 /*SECAO PRINCIPAL*/
 #guia_pais__principal {
-    height: 100vh;
+    position: relative;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -49,7 +51,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    margin-top: 90px;
+    margin-bottom: 90px;
+    height: 620px;
 }
 
 #principal_imagem-fundo {
@@ -57,7 +61,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 30%;
-    height: 85vh;
+    height: auto;
 }
 
 #principal_conteudo {
@@ -66,7 +70,7 @@ body {
     gap: 50px;
     padding: 2%;
     justify-content: center;
-    height: auto;
+    height:auto;
     width: 95%;
 }
 
@@ -125,6 +129,7 @@ body {
 }
 
 #cards_slider {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 2%;
@@ -147,6 +152,7 @@ body {
 
 /* Depoimento Grande */
 .principal_conteudo__card-g {
+   
     height: 150px;
     padding: 22px 5%;
     border-radius: 30px;
@@ -260,6 +266,7 @@ body {
 
 /*SECAO SEGURANÇA DIGITAL*/
 #guia_pais__seguranca {
+    position: relative;
     display: flex;
     height: auto;
     width: 100%;
@@ -272,7 +279,7 @@ body {
     justify-content: center;
     height: auto;
     width: 100%;
-
+    margin-top: 100px;   
 }
 
 #seguranca_conteudo-texto {
@@ -303,7 +310,7 @@ body {
 
 /*INICIO SECAO TRANSPARENCIA PLATAFORMA*/
 #guia_pais__transparencia {
-    height: 100vh;
+    height:auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -318,10 +325,10 @@ body {
     justify-content: center;
     text-align: center;
     gap: 50px;
-    margin: auto;
+    margin: 60px;
     object-fit: contain;
     height: auto;
-    width: 75%;
+    width: 70%;
 }
 
 .transparencia_subtitulo-texto {
@@ -407,10 +414,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 33px;
-    padding: 21px;
+    padding: 10px;
     border-radius: 50px;
     width: 40%;
-
     font-size: 20px;
     font-weight: 600;
     background-color: #fff;
@@ -480,16 +486,13 @@ body {
     content: '\f053';
 }
 
-.swiper-button-prev {
-    top: 500px;
+.swiper-button-prev { 
     left: 5vh;
 }
 
 .swiper-button-next {
-    top: 500px;
     right: 5vh;
 }
-
 
 /*Configuracao da onda*/
 .onda {
@@ -503,7 +506,8 @@ body {
 
 /*INICIO SECAO CERTIFICACAO*/
 #guia_pais__certificacao {
-    height: 30vh;
+    position: relative;
+    height: auto;
     width: 100%;
     background-color: var(--azul-bebe);
     display: flex;
@@ -533,8 +537,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 3vh;
+    gap: 20px;
     width: 70%;
+    height: 100%;
 }
 
 .certificacao_conteudo h3 {
@@ -543,10 +548,11 @@ body {
 
 .btn_config {
     text-align: center;
+    height: auto;
     padding: 10px;
     border-radius: 50px;
     width: 50%;
-    font-size: 17px;
+    font-size: 25px;
     text-decoration: none;
     font-weight: 600;
     color: var(--verde-agua-escuro);
@@ -560,11 +566,11 @@ body {
 
 /* INICIO SEÇÃO SEGURANÇA COM KODA */
 #guia_pais_com-koda {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-
+    height: auto;
 }
 
 .com_koda-container {
@@ -573,19 +579,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    width: initial;
-
+    gap: 35px;
+    margin-top: 90px;  
+    margin-bottom: 90px;
 }
 
 .com-koda--secao-direita {
-    height: auto;
+    height: 240px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     background-color: var(--rosa-avermelhado-claro);
     border-radius: 50px 300px 50px 50px;
 }
@@ -595,7 +601,7 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 20px;
     border-radius: 30px;
     padding: 21px;
     width: 55%;
@@ -613,7 +619,7 @@ body {
 }
 
 .com-koda--secao-esquerda {
-    height: auto;
+    height: 240px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -656,8 +662,8 @@ body {
 #star {
     position: absolute;
     z-index: 1;
-    left: 5%;
-    top: 370vh;
+    left: 4%;
+    top: 60%;
 }
 
 #star img:hover {
@@ -668,7 +674,7 @@ body {
     position: absolute;
     z-index: 2;
     right: 6%;
-    top: 320vh;
+    top: 20%;
 }
 
 #atencao img:hover {
@@ -715,11 +721,12 @@ body {
         width: 90%;
 
     }
-
+    .secao_conteudo{
+        height: 85%;
+    }
     .com-koda--secao-direita,
-    .com-koda--secao-esquerda,
-    .secao_conteudo {
-        max-height: 250px;
+    .com-koda--secao-esquerda {
+        height: 220px;
     }
 
     .secao_conteudo p {
@@ -733,47 +740,38 @@ body {
 
 @media (max-width: 768px) {
 
-    #principal_conteudo--titulo-subtitulo{
-        padding-top: 40px;
+    /*Responsividade do container principal*/
+
+    .principal-container{
+        margin-top: 40px;
+        gap: 20px;
+        
+    }
+    #principal_conteudo--titulo-subtitulo {
+        gap: 10px;
     }
 
-    
     #ondaLaranja{
-
       position: relative;
       width: 100%;
       height: 18px;
 
     }
-    #guia_pais__principal,
-    #guia_pais__seguranca {
-        height: 80vh;
-    }
-
-
 
     #card_comentarios-g p {
         font-size: 10px;
     }
 
-    .principal_conteudo-card {
-        height: 20vh;
-    }
-
-    #cards_slider {
-        gap: 1%;
-    }
-
-
     .seguranca-container {
         width: 80%;
         align-items: center;
+        margin: 30px;
+    }
+    .guia_pais--texto{
+        text-align: center;
     }
 
-
-
     #seguranca_conteudo-texto {
-        gap: 20px;
         align-items: center;
         width: 100%;
     }
@@ -790,17 +788,12 @@ body {
         display: none;
     }
 
-
-    #confira-blog {
-        height: 50px;
-        font-size: 20px;
-    }
-
     .btn_saiba-mais {
         width: 90%;
-        height: 50px;
+        height: 45px;
         font-size: 25px;
     }
+    
 
     .transparencia_card--conteudo {
         align-items: center;
@@ -810,6 +803,7 @@ body {
 
     .transparencia_card-container {
         border-radius: 40px;
+        padding: 10px;
         height: 450px;
         width: 100%;
         padding: 0;
@@ -840,12 +834,17 @@ body {
 
     .btn_config {
         font-size: 20px;
+        height: 30px;
+        
+    }
+
+    .com_koda-container{
+        margin: 60px
     }
 
     .com-koda--secao-direita {
         border-radius: 40px;
         justify-content: right;
-
 
     }
 
@@ -870,10 +869,20 @@ body {
     .transparencia_subtitulo-texto {
         display: none;
     }
+    .secao_conteudo p {
+        font-size: 10px;
+    }
 
 }
 
 @media (max-width: 540px) {
+
+   
+    #guia_pais__transparencia,
+    #guia_pais__principal,
+    #guia_pais__seguranca{
+        margin-top: 60px;
+    }
     #confira-blog {
         font-size: 20px;
     }
@@ -889,7 +898,6 @@ body {
     .btn_config {
         font-size: 20px;
         width: 100%;
-        height: 50px;
     }
 
     .guia_pais--titulo {
@@ -914,7 +922,7 @@ body {
 
     .secao_conteudo {
         width: 100%;
-        height: 650px;
+        height: 190px;
         gap: 15px;
         justify-content: center;
         transition: all 0.3s ease-in-out;
@@ -933,10 +941,11 @@ body {
     }
 
     .secao_conteudo p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .secao_conteudo h5 {
         font-size: 25px;
     }
 }
+/* Animações Do texto*/
