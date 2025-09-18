@@ -4,7 +4,7 @@
 :root {
     --cor-fundo-footer: #FF8965;
     --cor-fundo-header: #FF6C3F;
-    --cor-fundo-guia-pais: #FFF4DE;
+    --cor-fundo-guia-pais: #FFECBE;
     --cor-titulo: #F35F2F;
     --laranja-btn: #ED4700;
     --rosa-avermelhado: #F85655;
@@ -51,7 +51,7 @@ body, html {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 90px;
+    margin-top: 30px;
     margin-bottom: 90px;
     height: 620px;
 }
@@ -423,10 +423,19 @@ body, html {
     text-decoration: none;
 }
 
-.btn_saiba-mais:hover {
-    transition: 0.4s ease-in;
+.btn_saiba-mais:hover, .btn_config:hover {
     cursor: pointer;
-    box-shadow: 0 4.184px 4.184px 0 rgba(140, 152, 175, 0.25);
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn_saiba-mais:active, .btn_config:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+}
+.btn_saiba-mais, .btn_config {
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #btn_seguranca {
@@ -628,6 +637,14 @@ body, html {
     gap: 15px;
     background-color: var(--azul-bebe);
     border-radius: 400px 50px 50px 50px;
+}
+.com-koda--secao-direita:hover,
+.com-koda--secao-esquerda:hover{
+    cursor: pointer; 
+    transform: rotate(-1deg); 
+    box-shadow: 
+        0 0 20px 5px rgba(255, 197, 150, 0.7), 
+        0 15px 30px rgba(0,0,0,0.25);
 }
 
 .icon-bambu {
@@ -936,16 +953,12 @@ body, html {
 
     .secao_conteudo:hover {
         border: 2px solid #ffb764;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        transform: translateY(-5px);
+        transform: translateY(-1px);
+    }
+    .com-koda--secao-direita:hover,
+    .com-koda--secao-esquerda:hover{
+        transform: none;
     }
 
-    .secao_conteudo p {
-        font-size: 15px;
-    }
 
-    .secao_conteudo h5 {
-        font-size: 25px;
-    }
 }
-/* Animações Do texto*/
