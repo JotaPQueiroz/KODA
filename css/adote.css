@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-/*================ PRIMEIRA PARTE ================*/
-
 
 body {
   font-family: "Fredoka", sans-serif;
@@ -25,12 +23,12 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* centralizado verticalmente */
+  align-items: center; 
   gap: 40px;
 }
 
 .mascote img {
-  width: 220px; /* tamanho igual ao print */
+  width: 220px; 
 }
 
 .card {
@@ -100,7 +98,7 @@ main h1 {
   color: #732C1D;
 }
 
-/*================ SEGUNDA PARTE (FORMULÁRIO) ================*/
+
 
 .reserva-container{
   display: flex;
@@ -161,7 +159,7 @@ form input {
   gap: 20px;
   font-size: 14px;
   align-items: center;
-  flex-wrap: wrap;       /* permite quebra limpa em telas pequenas */
+  flex-wrap: wrap;       
   justify-content: flex-start;
 }
 
@@ -169,8 +167,8 @@ form input {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 0;             /* remove margem superior que atrapalhava */
-  white-space: nowrap;   /* evita que o ícone e o texto quebrem separadamente */
+  margin: 0;             
+  white-space: nowrap;   
 }
 
 .contatos img {
@@ -180,7 +178,7 @@ form input {
 }
 
 
-/*================ CARD DA LOGO E BOTÃO RESERVAR ================*/
+
 
 .koda-card {
   background: #F4AC47;
@@ -233,7 +231,7 @@ form input {
   transform: scale(1.05);
 }
 
-/* estado confirmado */
+
 .btn-reservar.reservado {
   background: #28a745;
   transform: scale(1.05);

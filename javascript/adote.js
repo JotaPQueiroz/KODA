@@ -27,16 +27,19 @@ document.getElementById("reservaForm").addEventListener("submit", function(e) {
 
 //ROLAR
 
-const botaoPreco = document.querySelector(".card button");
 
+const botaoPreco = document.querySelector(".card button");
 
 botaoPreco.addEventListener("click", () => {
   const formulario = document.getElementById("formulario-reserva");
-  formulario.scrollIntoView();
+  formulario.scrollIntoView({
+    behavior: "smooth", 
+    block: "start"      
+  });
 });
 
 
-//FIM DA SEGUNDA PARTE E TELA ROLAR
+
 
 //API DE ACESSIBILIDADE
   (function(d){
