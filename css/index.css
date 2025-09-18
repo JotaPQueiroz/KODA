@@ -84,10 +84,11 @@ body {
 
 #brilhos {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 7%;
+  width: 450px;
+  height: 400px;
+  right: 5px;
   z-index: 1;
+
   overflow: visible;
 
 
@@ -122,7 +123,6 @@ body {
   font-family: Fredoka;
   font-weight: 550;
   font-size: 40px;
-  margin-left: 15%;
   margin-top: 5%;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgb(0, 0, 0.2);
