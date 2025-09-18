@@ -2,6 +2,7 @@ main {
     background-color: #FFECBE;
     width: 100%;
     height: auto;
+   
     
 }
 
@@ -83,16 +84,17 @@ main {
 }
 
 #div-mid p {
-    color: black;
+    color: #732C1D;
     font-size: 18px;
     font: bold;
-    font-family: cursive;
+    font-family: "Montserrat";
+    font-weight: 600;
 }
 
-.membros .img {
+.imag {
+    
     width: 130px;
     height: 130px;
-    background-color: gray;
     margin-left: 15px;
     margin-top: 30px;
     border-radius: 100%;
@@ -105,8 +107,8 @@ main {
     color: #732C1D;
     font-size: 30px;
     margin-top: 50px;
-    margin-left: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    font-family:"Nunito";
 }
 
 .membros p {
@@ -136,8 +138,6 @@ main {
     margin-left: 20px;
     color: rgb(14, 52, 177); 
 }
-
-
 
 
 
