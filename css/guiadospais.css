@@ -726,6 +726,11 @@ body {
 
 @media (max-width: 768px) {
 
+    #principal_conteudo--titulo-subtitulo{
+        padding-top: 40px;
+    }
+                    
+
     #guia_pais__principal,
     #guia_pais__seguranca {
         height: 80vh;
@@ -766,7 +771,7 @@ body {
     }
 
     #seguranca_conteudo-imagem,
-    .card_comentarios-imagem-g,
+    .card_imagem-g,
     .card-imagem-m {
         display: none;
     }
