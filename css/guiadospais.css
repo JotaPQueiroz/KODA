@@ -529,7 +529,7 @@ body, html {
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    margin: auto;
+    margin: 30px;
     width: 75%;
 }
 
