@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="" alt="Logo do KODA" width="400"/>
+  <img src="https://github.com/JotaPQueiroz/KODA/blob/main/IconPage.png" alt="Logo do KODA" width="50"/>
 </p>
 
 <h1 align="center">Vem codar, com KODA </h1>
@@ -18,7 +18,7 @@ narração em voz e efeitos visuais que celebram cada passo da jornada.
 
 ---
 <div align="center">
-  <h4>Layout da Home:</h4>
+  <h4>Layout da home do site:</h4>
   <img width="500" src="https://github.com/JotaPQueiroz/KODA/blob/main/home.png"><br>
    Fonte: KODA
 </div>
