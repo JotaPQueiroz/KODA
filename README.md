@@ -25,7 +25,7 @@ narração em voz e efeitos visuais que celebram cada passo da jornada.
 
 <div align="center">
   <h4>Layout da home e tela interação do APP:</h4>
-  <img width="500" src="https://github.com/JotaPQueiroz/KODA/blob/main/home.png"><br>
+  <img width="500" src="https://github.com/JotaPQueiroz/KODA/blob/main/wireframe-app.png"><br>
    Fonte: KODA
 </div>
 
