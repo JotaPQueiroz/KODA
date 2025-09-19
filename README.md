@@ -23,6 +23,12 @@ narração em voz e efeitos visuais que celebram cada passo da jornada.
    Fonte: KODA
 </div>
 
+<div align="center">
+  <h4>Layout da home e tela interação do APP:</h4>
+  <img width="500" src="https://github.com/JotaPQueiroz/KODA/blob/main/home.png"><br>
+   Fonte: KODA
+</div>
+
 ## 🛠️ Tecnologias Utilizadas:
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  width="40" heigth="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" heigth="40" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="40" heigth="40"/>
