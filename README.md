@@ -42,7 +42,7 @@ narração em voz e efeitos visuais que celebram cada passo da jornada.
 
 - Leonardo Silva 
 - Mariana Ocireu
-- João Pedro 
+- João Pedro Queiroz 
 - Sabrina Gomes
 - Gabriel Damasceno
 - Jhuan Pablo
